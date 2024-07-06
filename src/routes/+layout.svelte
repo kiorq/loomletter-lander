@@ -9,6 +9,10 @@
 		content="LoomLetter: Your ultimate solution for managing and reading newsletters. Stay on top of your newsletter subscriptions, inbox spam, and morning briefings with ease. Experience smarter, short form content from sources like Headway app and Substack. Read emails, articles, and more with our intuitive newsletter reader. Perfect for microlearning and self-improvement."
 	/>
 	<link rel="icon" href="/logo.svg" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+	<link rel="manifest" href="/site.webmanifest" />
 
 	<meta
 		name="keywords"

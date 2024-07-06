@@ -23,18 +23,12 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Newsletter Reader - LoomLetter</title>
-	<meta name="description" content="Svelte demo app" />
-	<link rel="icon" href="/logo.svg" />
-</svelte:head>
-
 <!-- Hero -->
 <section class="flex flex-col md:flex-row gap-4 pt-5 md:pt-24 pb-32">
 	<div class="md:hidden flex items-center justify-center">
 		<img src="/logo.svg" alt="LoomLetter Icon" width="60" height="60" />
 	</div>
-	<div class="w-[360px] flex-shrink-0">
+	<div class="w-full md:w-[360px] flex-shrink-0">
 		<img src="/iphones.png" class="w-full h-auto" />
 	</div>
 	<div class="w-full flex flex-col gap-3 items-start justify-center">
@@ -53,8 +47,9 @@
 			<a
 				href="#waitlist"
 				class="block text-center w-full md:w-fit bg-[#32F3AE] text-[#066252] py-4 px-10 rounded-2xl text-lg font-medium transition-all hover:bg-[#066252] hover:text-white"
-				>Join Waitlist</a
 			>
+				Join Waitlist
+			</a>
 		</div>
 	</div>
 </section>
@@ -160,7 +155,7 @@
 		<form class="flex flex-row gap-3">
 			<input
 				type="text"
-				class="p-2 bg-white rounded-lg border border-[#066252] outline-[#066252] text-[#066252] w-[250px]"
+				class="p-2 bg-white rounded-lg border border-[#066252] outline-[#066252] text-[#066252] md:w-[250px]"
 				placeholder="Enter email address"
 			/>
 

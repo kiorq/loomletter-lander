@@ -24,8 +24,9 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Newsletter Reader - LoomLetter</title>
 	<meta name="description" content="Svelte demo app" />
+	<link rel="icon" href="/logo.svg" />
 </svelte:head>
 
 <!-- Hero -->

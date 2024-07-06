@@ -29,7 +29,7 @@
 	let joining = false;
 	let joined = false;
 
-	const onJoinWaitList = async (event: FormDataEvent) => {
+	const onJoinWaitList = async (event: SubmitEvent) => {
 		event.preventDefault();
 		event.stopPropagation();
 		joining = true;

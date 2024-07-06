@@ -36,7 +36,7 @@
 		<h1
 			class="w-full font-bold text-4xl md:text-5xl text-[#066252] leading-[1.2] text-center md:text-left"
 		>
-			Never Miss<br /> an Important<br /> Newsletter Again
+			Effortlessly catch up on your favorite newsletters
 		</h1>
 
 		<p class="w-full font-normal text-lg md:text-2xl text-[#555555] text-center md:text-left">

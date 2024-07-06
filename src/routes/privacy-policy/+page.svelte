@@ -2,7 +2,7 @@
 	<title>Privacy Policy (Newsletter Reader - LoomLetter)</title>
 </svelte:head>
 
-<header class="py-8 sticky top-0">
+<header class="py-8 sticky top-0 bg-white">
 	<a href="/" class="flex items-center justify-start gap-3">
 		<img src="/logo.svg" alt="LoomLetter Icon" width="40" height="40" />
 		<p class="text-2xl font-medium">LoomLetter</p>

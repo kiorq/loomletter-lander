@@ -5,3 +5,8 @@
 body {
     background-color: white;
 }
+
+.gradient-bg {
+    background-image: url('/gadient-bg.png');
+    background-size: cover;
+}

@@ -1,4 +1,7 @@
-<script>
+<script lang="ts">
+	import Spinner from '$lib/components/Spinner.svelte';
+	import { fade } from 'svelte/transition';
+
 	const faq = [
 		{
 			question: 'How does LoomLetter protect my privacy?',
@@ -21,6 +24,36 @@
 				'You can disconnect your email account from LoomLetter in the app settings and tapping the Log Out button. This will stop all data synchronization and remove any saved data from the app and your token from our servers.'
 		}
 	];
+
+	let emailAddress = '';
+	let joining = false;
+	let joined = false;
+
+	const onJoinWaitList = async (event: FormDataEvent) => {
+		event.preventDefault();
+		event.stopPropagation();
+		joining = true;
+		try {
+			const response = await fetch('/join-waitlist', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({ email_address: emailAddress })
+			});
+
+			if (!response.ok) {
+				throw new Error(`HTTP error! status: ${response.status}`);
+			}
+
+			const data = await response.json();
+			if (data.ok) {
+				joined = true;
+			}
+		} finally {
+			joining = false;
+		}
+	};
 </script>
 
 <!-- Hero -->
@@ -147,23 +180,43 @@
 <!-- Waitlist -->
 <section class="flex flex-col gap-0 pb-32" id="waitlist">
 	<div
-		style="background-image: url('/gadient-bg.png'); background-size: cover;"
-		class="rounded-3xl p-12 text-center flex flex-col items-center justify-center"
+		class="gradient-bg rounded-3xl p-12 text-center flex flex-col items-center justify-center relative overflow-clip"
 	>
+		{#if joining}
+			<div
+				transition:fade
+				class="gradient-bg absolute inset-0 w-full h-full z-10 flex items-center justify-center"
+			>
+				<Spinner width="60" height="60" color="#066252" />
+			</div>
+		{:else if joined}
+			<div
+				transition:fade
+				class="gradient-bg absolute inset-0 w-full h-full z-10 flex flex-col items-center justify-center"
+			>
+				<p class="font-bold text-3xl text-[#066252] mb-5">Thank you for joining the waitlist</p>
+				<p class="font-medium text-lg text-[#066252]">
+					You'll be among the first to know when we launch
+				</p>
+			</div>
+		{/if}
+
 		<p class="font-bold text-3xl text-[#066252] mb-5">Join the Waitlist</p>
 
-		<form class="flex flex-row gap-3">
+		<form class="flex flex-row gap-3" on:submit={onJoinWaitList}>
 			<input
 				type="text"
 				class="p-2 bg-white rounded-lg border border-[#066252] outline-[#066252] text-[#066252] md:w-[250px]"
 				placeholder="Enter email address"
+				bind:value={emailAddress}
 			/>
 
 			<button
 				type="submit"
 				class="bg-[#066252] border border-[#066252] px-5 text-white rounded-lg hover:bg-[#02332b]"
-				>Join</button
 			>
+				Join
+			</button>
 		</form>
 	</div>
 </section>

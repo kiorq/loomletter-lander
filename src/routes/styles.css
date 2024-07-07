@@ -10,3 +10,25 @@ body {
     background-image: url('/gadient-bg.png');
     background-size: cover;
 }
+
+@keyframes fadeInOut {
+
+    0%,
+    20%,
+    50%,
+    70%,
+    100% {
+        opacity: 0;
+    }
+
+    25%,
+    45%,
+    75%,
+    95% {
+        opacity: 1;
+    }
+}
+
+.widget-fade {
+    animation: fadeInOut 30s infinite;
+}

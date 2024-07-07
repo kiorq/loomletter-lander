@@ -111,6 +111,19 @@
 			<p class="text-[#066252]">
 				Add widgets to your home screen to quickly access your favorite newsletters at a glance
 			</p>
+
+			<div class="mt-4 aspect-[53/29] relative">
+				<img
+					src="/widget-preview-1.png"
+					alt="LoomLetter Widget Preview 1"
+					class="w-full h-auto rounded-3xl absolute inset-0 z-10"
+				/>
+				<img
+					src="/widget-preview-2.png"
+					alt="LoomLetter Widget Preview 2"
+					class="w-full h-auto rounded-3xl absolute inset-0 z-20 widget-fade"
+				/>
+			</div>
 		</div>
 
 		<div class="bg-[#32F3AE] rounded-3xl px-5 py-5 flex flex-col gap-2">

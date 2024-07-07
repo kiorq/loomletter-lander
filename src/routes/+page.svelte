@@ -93,23 +93,24 @@
 		<div class="bg-[#32F3AE] rounded-3xl px-5 py-5 flex flex-col gap-2">
 			<h2 class="text-[#066252] font-bold text-3xl">Sync with your inbox</h2>
 			<p class="text-[#066252]">
-				All your data is processed securely on your device, ensuring that your personal information
-				remains private and protected.*
+				Stay up-to-date with all your newsletters as they arrive. LoomLetter securely syncs with
+				your inbox, ensuring your private information stays private.*
 			</p>
 		</div>
 
 		<div class="bg-[#32F3AE] rounded-3xl px-5 py-5 flex flex-col gap-2">
-			<h2 class="text-[#066252] font-bold text-3xl">Privacy First</h2>
+			<h2 class="text-[#066252] font-bold text-3xl">AI Voice Reading</h2>
 			<p class="text-[#066252]">
-				All your data is processed securely on your device, ensuring that your personal information
-				remains private and protected.*
+				Transform your reading experience with our AI-powered voice technology. Listen to
+				newsletters in realistic, human-like audio, perfect for staying informed while on the go.
 			</p>
 		</div>
 
 		<div class="bg-[#32F3AE] row-span-2 rounded-3xl px-5 py-5 flex flex-col gap-2">
 			<h2 class="text-[#066252] font-bold text-3xl">Dynamic Widgets</h2>
 			<p class="text-[#066252]">
-				Add widgets to your home screen to quickly access your favorite newsletters at a glance
+				Keep your favorite newsletters at your fingertips. Add widgets to your home screen for quick
+				and easy access at a glance.
 			</p>
 
 			<div class="mt-4 aspect-[53/29] relative">
@@ -129,16 +130,16 @@
 		<div class="bg-[#32F3AE] rounded-3xl px-5 py-5 flex flex-col gap-2">
 			<h2 class="text-[#066252] font-bold text-3xl">No Sign Up Required</h2>
 			<p class="text-[#066252]">
-				Start using LoomLetter immediately without the hassle of creating an account, making it
-				quick and convenient.
+				Dive into your newsletters instantly. LoomLetter requires no account creation, making it
+				hassle-free and convenient to use.
 			</p>
 		</div>
 
 		<div class="bg-[#32F3AE] rounded-3xl px-5 py-5 flex flex-col gap-2">
 			<h2 class="text-[#066252] font-bold text-3xl">Offline Support</h2>
 			<p class="text-[#066252]">
-				LoomLetter sync your newsletters early on the morning, so they will be ready at your
-				convenience.
+				Read anytime, anywhere. LoomLetter syncs your newsletters early in the morning, so they’re
+				ready whenever you are, even offline.
 			</p>
 		</div>
 	</div>

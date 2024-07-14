@@ -2,11 +2,16 @@
 	<title>Press (Newsletter Reader - LoomLetter)</title>
 </svelte:head>
 
-<header class="py-8 sticky top-0 bg-white">
+<header class="py-8 sticky top-0 bg-white flex flex-row justify-between">
 	<a href="/" class="flex items-center justify-start gap-3">
 		<img src="/logo.svg" alt="LoomLetter Icon" width="40" height="40" />
 		<p class="text-2xl font-medium">LoomLetter</p>
 	</a>
+
+	<div class="flex flex-row justify-end gap-4">
+		<a href="/press" class="py-2 px-4 hover:underline text-[#066252]"> Press </a>
+		<a href="/privacy-policy" class="py-2 px-4 hover:underline text-[#066252]"> Privacy Policy </a>
+	</div>
 </header>
 
 <main class="flex flex-col gap-0 pb-32">

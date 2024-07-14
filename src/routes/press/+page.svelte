@@ -67,10 +67,10 @@
 	</section>
 
 	<section class="mb-8">
-		<h2 class="text-2xl font-semibold mb-4">Contact developer</h2>
+		<h2 class="text-2xl font-semibold mb-4">Anymore questions?</h2>
 
 		<p class="text-gray-600">
-			You can reach out to me at <a
+			Reach out to me at <a
 				class="font-medium hover:underline text-[#066252]"
 				href="mailto:loomletter@digidouglas.com">loomletter@digidouglas.com</a
 			>

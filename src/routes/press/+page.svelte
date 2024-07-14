@@ -76,16 +76,28 @@
 				<img src="/press/press-2.png" />
 			</a>
 
-			<a href="/press/press-3.png" download="loomletter-press-3.png" class="downloadable-asset">
+			<a
+				href="/press/press-3.png"
+				download="loomletter-press-ai-reading.png"
+				class="downloadable-asset"
+			>
 				<img src="/press/press-3.png" />
 			</a>
 
-			<a href="/press/press-4.png" download="loomletter-press-4.png" class="downloadable-asset">
+			<a
+				href="/press/press-4.png"
+				download="loomletter-press-widgets.png"
+				class="downloadable-asset"
+			>
 				<img src="/press/press-4.png" />
 			</a>
 
-			<a href="/press/press-5.png" download="loomletter-press-4.png" class="downloadable-asset">
-				<img src="/press/press-4.png" />
+			<a
+				href="/press/press-5.png"
+				download="loomletter-press-push-notifications.png"
+				class="downloadable-asset"
+			>
+				<img src="/press/press-5.png" />
 			</a>
 		</div>
 	</section>

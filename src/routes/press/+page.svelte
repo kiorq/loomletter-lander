@@ -47,6 +47,21 @@
 	<section class="mb-8">
 		<h2 class="text-2xl font-semibold mb-4">Promo Banners</h2>
 
+		<p class="text-gray-600">
+			The dimensions for each banner are 2048 x 1024 pixels, with file sizes ranging from 1.3 to 1.6
+			MB.
+		</p>
+
+		<p class="text-gray-600 mb-5">
+			<a
+				class="font-medium hover:underline text-[#066252]"
+				href="mailto:loomletter@digidouglas.com"
+			>
+				Send an email
+			</a>
+			if you require a custom banner.
+		</p>
+
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
 			<a href="/press/press-1.png" download="loomletter-press-1.png" class="downloadable-asset">
 				<img src="/press/press-1.png" />

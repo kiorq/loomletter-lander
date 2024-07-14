@@ -56,6 +56,14 @@
 	};
 </script>
 
+<!-- header -->
+<div class="flex flex-row justify-end gap-4">
+	<a href="/press" class="py-5 md:py-7 px-4 hover:underline text-[#066252]"> Press </a>
+	<a href="/privacy-policy" class="py-5 md:py-7 px-4 hover:underline text-[#066252]">
+		Privacy Policy
+	</a>
+</div>
+
 <!-- Hero -->
 <section class="flex flex-col md:flex-row gap-4 pt-5 md:pt-24 pb-32">
 	<div class="md:hidden flex items-center justify-center">

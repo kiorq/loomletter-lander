@@ -83,6 +83,10 @@
 			<a href="/press/press-4.png" download="loomletter-press-4.png" class="downloadable-asset">
 				<img src="/press/press-4.png" />
 			</a>
+
+			<a href="/press/press-5.png" download="loomletter-press-4.png" class="downloadable-asset">
+				<img src="/press/press-4.png" />
+			</a>
 		</div>
 	</section>
 

@@ -68,6 +68,14 @@
 		</p>
 
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+			<a
+				href="/press/press-6.png"
+				download="loomletter-press-declutter-inbox.png"
+				class="downloadable-asset"
+			>
+				<img src="/press/press-6.png" />
+			</a>
+
 			<a href="/press/press-1.png" download="loomletter-press-1.png" class="downloadable-asset">
 				<img src="/press/press-1.png" />
 			</a>

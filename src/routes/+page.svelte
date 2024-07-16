@@ -192,7 +192,7 @@
 	</div>
 </section>
 
-<section class="w-full pb-20 md:pb-[200px]" id="waitlist">
+<section class="w-full pb-20 md:pb-[200px] pt-8" id="waitlist">
 	<div class="flex flex-col gap-10 md:gap-20 items-center">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
 			<p class="text-3xl md:text-6xl -text-gradient font-bold text-center">

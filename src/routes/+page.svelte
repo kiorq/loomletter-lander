@@ -94,7 +94,7 @@
 				Stop Letting Your Favorite Newsletters Pile Up
 			</h1>
 
-			<p class="text-lg md:text-2xl text-white text-center">
+			<p class="text-lg md:text-2xl text-white text-center md:text-left">
 				A Newsletter Reader for Busy Professionals
 			</p>
 

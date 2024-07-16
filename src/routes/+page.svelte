@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition';
+	import { fade, slide } from 'svelte/transition';
 	import Spinner from '../lib/components/Spinner.svelte';
 
 	const faq = [
@@ -51,6 +51,7 @@
 		event.preventDefault();
 		event.stopPropagation();
 		joining = true;
+
 		try {
 			const response = await fetch('/join-waitlist', {
 				method: 'POST',
@@ -74,31 +75,39 @@
 	};
 </script>
 
-<section class="w-full py-[120px]">
-	<div class="flex flex-row gap-8 items-center">
-		<div class="w-[502px] shrink-0">
+<section class="w-full pb-20 md:py-[120px]">
+	<div class="flex flex-col-reverse md:flex-row gap-8 items-center">
+		<div class="w-full md:w-[502px] shrink-0">
 			<img src="/iphones.png" class="w-full h-auto" />
 		</div>
 		<div class="flex-grow flex flex-col gap-5 justify-start">
-			<h1 class="text-6xl -text-gradient font-bold">
+			<h1 class="text-4xl text-center md:text-left md:text-6xl -text-gradient font-bold">
 				Stop Letting Your Favorite Newsletters Pile Up
 			</h1>
 
-			<p class="text-2xl text-white">A Newsletter Reader for Busy Professionals</p>
+			<p class="text-lg md:text-2xl text-white text-center">
+				A Newsletter Reader for Busy Professionals
+			</p>
 
-			<a
-				class="w-fit bg-white/10 hover:bg-white/30 px-9 py-4 rounded-full font-bold transition-all"
-				href="#waitlist"><p class="-text-gradient text-xl">Exclusive Early Access</p></a
-			>
+			<div class="w-full flex lg:justify-start justify-center">
+				<a
+					class="w-fit bg-white/10 hover:bg-white/30 px-9 py-4 rounded-full font-bold transition-all"
+					href="#waitlist"><p class="-text-gradient text-xl">Exclusive Early Access</p></a
+				>
+			</div>
 		</div>
 	</div>
 </section>
 
-<section class="w-full pb-[200px]">
-	<div class="flex flex-row gap-8 items-center">
-		<div class="flex-grow flex flex-col justify-start">
-			<div class="flex flex-col gap-8 bg-white/10 p-20 rounded-[100px] justify-center items-center">
-				<p class="text-6xl -text-gradient font-bold text-center">AI-Powered Newsletter Narration</p>
+<section class="w-full pb-20 md:pb-[200px]">
+	<div class="flex flex-col-reverse md:flex-row gap-0 items-center">
+		<div class="flex-grow flex flex-col justify-start mt-[-100px] md:mt-0">
+			<div
+				class="flex flex-col gap-8 bg-white/10 backdrop-blur-lg py-10 px-4 md:p-20 rounded-3xl md:rounded-[100px] justify-center items-center"
+			>
+				<p class="text-3xl md:text-6xl -text-gradient font-bold text-center">
+					AI-Powered Newsletter Narration
+				</p>
 
 				<p class="text-lg text-white text-center">
 					Effortlessly catch up on newsletters while commuting, exercising, or multitasking with
@@ -112,16 +121,18 @@
 				> -->
 			</div>
 		</div>
-		<div class="w-[390px] shrink-0">
+		<div class="w-3/5 md:w-[390px] shrink-0">
 			<img src="/ai-reading-screenshot.png" class="w-full h-auto" />
 		</div>
 	</div>
 </section>
 
-<section class="w-full pb-[200px]">
-	<div class="flex flex-col gap-20 items-center">
+<section class="w-full pb-20 md:pb-[200px]">
+	<div class="flex flex-col gap-10 md:gap-20 items-center">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
-			<p class="text-6xl -text-gradient font-bold text-center">Never Miss a Newsletter</p>
+			<p class="text-3xl md:text-6xl -text-gradient font-bold text-center">
+				Never Miss a Newsletter
+			</p>
 
 			<p class="text-lg text-white text-center w-full md:max-w-[700px]">
 				Effortlessly catch up on newsletters while commuting, exercising, or multitasking with
@@ -129,16 +140,16 @@
 				into your busy lifestyle.
 			</p>
 		</div>
-		<div class="w-[700px] shrink-0">
+		<div class="w-full md:w-[700px] shrink-0">
 			<img src="notifications.png" class="w-full h-auto" />
 		</div>
 	</div>
 </section>
 
-<section class="w-full pb-[200px]">
+<section class="w-full pb-20 md:pb-[200px]">
 	<div class="flex flex-col gap-20 items-center">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
-			<p class="text-6xl -text-gradient font-bold text-center">Widgets</p>
+			<p class="text-3xl md:text-6xl -text-gradient font-bold text-center">Widgets</p>
 
 			<p class="text-lg text-white text-center w-full md:max-w-[700px]">
 				Stay on top of your newsletters with real-time push notifications. Get instant alerts the
@@ -147,15 +158,16 @@
 			</p>
 		</div>
 		<div class="w-full md:w-[1000px] shrink-0">
-			<img src="widgets.png" class="w-full h-auto" />
+			<img src="widgets.png" class="w-full h-auto md:block hidden" />
+			<img src="widgets-sm.png" class="w-full h-auto md:hidden block" />
 		</div>
 	</div>
 </section>
 
-<section class="w-full pb-[200px]">
-	<div class="flex flex-col gap-20 items-center">
+<section class="w-full pb-20 md:pb-[200px]">
+	<div class="flex flex-col gap-10 md:gap-20 items-center">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
-			<p class="text-6xl -text-gradient font-bold text-center">No Sign-Up Needed</p>
+			<p class="text-3xl md:text-6xl -text-gradient font-bold text-center">No Sign-Up Needed</p>
 
 			<p class="text-lg text-white text-center w-full md:max-w-[700px]">
 				Start using LoomLetter instantly with no sign-up required. Simply connect your inbox and
@@ -164,7 +176,7 @@
 		</div>
 		<div class="w-full md:w-[1000px] shrink-0">
 			<div
-				class="bg-gradient-to-b from-[#F8F8F8]/10 to-[#929292]/10 p-20 rounded-[60px] grid grid-cols-1 md:grid-cols-3"
+				class="bg-gradient-to-b from-[#F8F8F8]/10 to-[#929292]/10 p-10 gap-12 md:gap-0 md:p-20 rounded-[60px] grid grid-cols-1 md:grid-cols-3"
 			>
 				{#each emailClients as client}
 					<div class="flex flex-col justify-center items-center">
@@ -179,22 +191,24 @@
 	</div>
 </section>
 
-<section class="w-full pb-[200px]" id="waitlist">
+<section class="w-full pb-20 md:pb-[200px]" id="waitlist">
 	<div class="flex flex-col gap-20 items-center">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
-			<p class="text-6xl -text-gradient font-bold text-center">Exclusive Early Access</p>
+			<p class="text-3xl md:text-6xl -text-gradient font-bold text-center">
+				Exclusive Early Access
+			</p>
 
 			<p class="text-lg text-white text-center w-full md:max-w-[700px]">
 				LoomLetter is launching soon! Join our waitlist to get early access and stay updated on the
 				latest features and news. Don’t miss out on transforming your newsletter experience.
 			</p>
 		</div>
-		<div class="w-full md:w-[1000px] shrink-0 flex items-center justify-center">
+		<div class="w-full md:w-[1000px] shrink-0 flex flex-col items-center justify-center">
 			{#if joining}
 				{#key 'joining-state'}
 					<div
 						class="bg-white/10 w-fit py-3 px-6 rounded-2xl flex flex-row gap-3 items-center"
-						transition:fade
+						transition:slide
 					>
 						<Spinner width={30} height={30} />
 						<p class="text-lg">Joining...</p>
@@ -204,18 +218,18 @@
 				{#key 'joined-state'}
 					<div
 						class="-bg-gradient w-fit py-3 px-6 rounded-2xl flex flex-row gap-3 items-center"
-						transition:fade
+						transition:slide
 					>
-						<p class="text-lg text-black font-medium">
-							Thank you for joining! You'll be one of the first to know!
+						<p class="text-lg text-black font-medium text-center">
+							Thank you for joining!<br />You'll be one of the first to know!
 						</p>
 					</div>
 				{/key}
 			{:else}
 				{#key 'join-form'}
 					<form
-						class="flex flex-row justify-center items-center gap-6"
-						transition:fade
+						class="flex flex-col md:flex-row justify-center items-center gap-6"
+						transition:slide
 						on:submit={onJoinWaitList}
 					>
 						<input
@@ -237,13 +251,13 @@
 </section>
 
 <section class="w-full pb-[200px]">
-	<div class="flex flex-col gap-20 items-center">
+	<div class="flex flex-col gap-10 md:gap-20 items-center">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
 			<h1 class="text-4xl -text-gradient font-bold text-center">Frequently Asked Questions</h1>
 		</div>
 		<div class="w-full md:w-[1000px] shrink-0">
 			{#each faq as qa}
-				<div class="py-7 border-b border-white/10">
+				<div class="py-7 border-b last:border-0 border-white/10">
 					<p class="text-2xl text-white font-medium mb-3">{qa.question}</p>
 					<p class="text-white/80">{qa.answer}</p>
 				</div>

@@ -1,3 +1,15 @@
+<script lang="ts">
+	import { track } from '@cronitorio/cronitor-rum';
+
+	const onTrackDownload = (name: string) => () => {
+		track('PressDwn_' + name);
+	};
+
+	const onContactTrack = () => {
+		track('PressContactClick');
+	};
+</script>
+
 <svelte:head>
 	<title>Press (Newsletter Reader - LoomLetter)</title>
 </svelte:head>
@@ -32,7 +44,12 @@
 	<section class="mb-8">
 		<h2 class="text-2xl font-semibold mb-4">App Icons</h2>
 
-		<a href="/press/app-icon.png" download="loomletter-app-icon.png" class="downloadable-asset">
+		<a
+			href="/press/app-icon.png"
+			download="loomletter-app-icon.png"
+			class="downloadable-asset"
+			on:click={onTrackDownload('Icon')}
+		>
 			<img src="/press/app-icon.png" class="w-52 h-52" />
 		</a>
 	</section>
@@ -49,6 +66,7 @@
 			<a
 				class="font-medium hover:underline text-[#32F3AE]"
 				href="mailto:loomletter@digidouglas.com"
+				on:click={onContactTrack}
 			>
 				Send an email
 			</a>
@@ -60,15 +78,26 @@
 				href="/press/press-6.png"
 				download="loomletter-press-declutter-inbox.png"
 				class="downloadable-asset"
+				on:click={onTrackDownload('Press6')}
 			>
 				<img src="/press/press-6.png" />
 			</a>
 
-			<a href="/press/press-1.png" download="loomletter-press-1.png" class="downloadable-asset">
+			<a
+				href="/press/press-1.png"
+				download="loomletter-press-1.png"
+				class="downloadable-asset"
+				on:click={onTrackDownload('Press1')}
+			>
 				<img src="/press/press-1.png" />
 			</a>
 
-			<a href="/press/press-2.png" download="loomletter-press-2.png" class="downloadable-asset">
+			<a
+				href="/press/press-2.png"
+				download="loomletter-press-2.png"
+				class="downloadable-asset"
+				on:click={onTrackDownload('Press2')}
+			>
 				<img src="/press/press-2.png" />
 			</a>
 
@@ -76,6 +105,7 @@
 				href="/press/press-3.png"
 				download="loomletter-press-ai-reading.png"
 				class="downloadable-asset"
+				on:click={onTrackDownload('Press3')}
 			>
 				<img src="/press/press-3.png" />
 			</a>
@@ -84,6 +114,7 @@
 				href="/press/press-4.png"
 				download="loomletter-press-widgets.png"
 				class="downloadable-asset"
+				on:click={onTrackDownload('Press4')}
 			>
 				<img src="/press/press-4.png" />
 			</a>
@@ -92,6 +123,7 @@
 				href="/press/press-5.png"
 				download="loomletter-press-push-notifications.png"
 				class="downloadable-asset"
+				on:click={onTrackDownload('Press5')}
 			>
 				<img src="/press/press-5.png" />
 			</a>
@@ -104,7 +136,8 @@
 		<p class="text-white/80">
 			Reach out to me at <a
 				class="font-medium hover:underline text-[#32F3AE]"
-				href="mailto:loomletter@digidouglas.com">loomletter@digidouglas.com</a
+				href="mailto:loomletter@digidouglas.com"
+				on:click={onContactTrack}>loomletter@digidouglas.com</a
 			>
 		</p>
 	</section>

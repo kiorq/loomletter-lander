@@ -108,7 +108,28 @@
 </svelte:head>
 
 <div class="app">
-	<main class="w-full max-w-[800px] px-4 mx-auto">
+	<!-- header -->
+	<div class="flex flex-row justify-between w-full max-w-[1200px] mx-auto px-4 py-10">
+		<a href="/">
+			<div class="flex flex-row gap-5 items-center">
+				<img src="/logo.svg" alt="LoomLetter Icon" width="40" height="40" class="hidden md:block" />
+				<p class="text-3xl font-medium text-white">LoomLetter</p>
+			</div>
+		</a>
+		<div class="flex flex-row justify-end gap-4 py-3">
+			<a href="/press" class="py-2.5 px-6 hover:bg-white/10 text-white rounded-3xl transition-all"
+				>Press</a
+			>
+			<a
+				href="/privacy-policy"
+				class="py-2.5 px-6 hover:bg-white/10 text-white rounded-3xl transition-all"
+			>
+				Privacy Policy
+			</a>
+		</div>
+	</div>
+	<!-- main -->
+	<main class="w-full max-w-[1200px] px-4 mx-auto">
 		<slot />
 	</main>
 	<footer

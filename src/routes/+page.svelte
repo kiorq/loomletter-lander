@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Spinner from '$lib/components/Spinner.svelte';
 	import { fade } from 'svelte/transition';
+	import Spinner from '../lib/components/Spinner.svelte';
 
 	const faq = [
 		{
@@ -22,6 +22,24 @@
 			question: 'How can I disconnect my email account from LoomLetter?',
 			answer:
 				'You can disconnect your email account from LoomLetter in the app settings and tapping the Log Out button. This will stop all data synchronization and remove any saved data from the app and your token from our servers.'
+		}
+	];
+
+	const emailClients = [
+		{
+			img: '/gmail.png',
+			title: 'Gmail',
+			descr: 'Supported'
+		},
+		{
+			img: '/outlook.png',
+			title: 'Microsoft Outlook',
+			descr: 'Coming Soon'
+		},
+		{
+			img: '/applemail.png',
+			title: 'Apple Mail',
+			descr: 'Coming Soon'
 		}
 	];
 
@@ -68,9 +86,9 @@
 
 			<p class="text-2xl text-white">A Newsletter Reader for Busy Professionals</p>
 
-			<button
-				class="w-fit bg-white/10 hover:bg-white/30 px-6 py-3 rounded-3xl font-bold transition-all"
-				><p class="-text-gradient">Exclusive Early Access</p></button
+			<a
+				class="w-fit bg-white/10 hover:bg-white/30 px-9 py-4 rounded-full font-bold transition-all"
+				href="#waitlist"><p class="-text-gradient text-xl">Exclusive Early Access</p></a
 			>
 		</div>
 	</div>
@@ -80,9 +98,7 @@
 	<div class="flex flex-row gap-8 items-center">
 		<div class="flex-grow flex flex-col justify-start">
 			<div class="flex flex-col gap-8 bg-white/10 p-20 rounded-[100px] justify-center items-center">
-				<h1 class="text-6xl -text-gradient font-bold text-center">
-					AI-Powered Newsletter Narration
-				</h1>
+				<p class="text-6xl -text-gradient font-bold text-center">AI-Powered Newsletter Narration</p>
 
 				<p class="text-lg text-white text-center">
 					Effortlessly catch up on newsletters while commuting, exercising, or multitasking with
@@ -90,10 +106,10 @@
 					perfectly into your busy lifestyle.
 				</p>
 
-				<button
+				<!-- <button
 					class="w-fit bg-white/10 hover:bg-white/30 px-6 py-3 rounded-3xl font-bold transition-all"
 					><p class="-text-gradient">Listen to a Newsletter</p></button
-				>
+				> -->
 			</div>
 		</div>
 		<div class="w-[390px] shrink-0">
@@ -105,7 +121,7 @@
 <section class="w-full pb-[200px]">
 	<div class="flex flex-col gap-20 items-center">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
-			<h1 class="text-6xl -text-gradient font-bold text-center">Never Miss a Newsletter</h1>
+			<p class="text-6xl -text-gradient font-bold text-center">Never Miss a Newsletter</p>
 
 			<p class="text-lg text-white text-center w-full md:max-w-[700px]">
 				Effortlessly catch up on newsletters while commuting, exercising, or multitasking with
@@ -115,6 +131,123 @@
 		</div>
 		<div class="w-[700px] shrink-0">
 			<img src="notifications.png" class="w-full h-auto" />
+		</div>
+	</div>
+</section>
+
+<section class="w-full pb-[200px]">
+	<div class="flex flex-col gap-20 items-center">
+		<div class="flex-grow flex flex-col gap-8 justify-start">
+			<p class="text-6xl -text-gradient font-bold text-center">Widgets</p>
+
+			<p class="text-lg text-white text-center w-full md:max-w-[700px]">
+				Stay on top of your newsletters with real-time push notifications. Get instant alerts the
+				moment new content arrives, ensuring you never miss an update. Stay informed and connected,
+				effortlessly.
+			</p>
+		</div>
+		<div class="w-full md:w-[1000px] shrink-0">
+			<img src="widgets.png" class="w-full h-auto" />
+		</div>
+	</div>
+</section>
+
+<section class="w-full pb-[200px]">
+	<div class="flex flex-col gap-20 items-center">
+		<div class="flex-grow flex flex-col gap-8 justify-start">
+			<p class="text-6xl -text-gradient font-bold text-center">No Sign-Up Needed</p>
+
+			<p class="text-lg text-white text-center w-full md:max-w-[700px]">
+				Start using LoomLetter instantly with no sign-up required. Simply connect your inbox and
+				dive into a seamless newsletter experience. Quick, easy, and hassle-free!
+			</p>
+		</div>
+		<div class="w-full md:w-[1000px] shrink-0">
+			<div
+				class="bg-gradient-to-b from-[#F8F8F8]/10 to-[#929292]/10 p-20 rounded-[60px] grid grid-cols-1 md:grid-cols-3"
+			>
+				{#each emailClients as client}
+					<div class="flex flex-col justify-center items-center">
+						<img src={client.img} class="w-[120px] mb-4" />
+
+						<p class="text-xl font-bold text-[#32F3AE] mb-2">{client.title}</p>
+						<p class="text-white">{client.descr}</p>
+					</div>
+				{/each}
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="w-full pb-[200px]" id="waitlist">
+	<div class="flex flex-col gap-20 items-center">
+		<div class="flex-grow flex flex-col gap-8 justify-start">
+			<p class="text-6xl -text-gradient font-bold text-center">Exclusive Early Access</p>
+
+			<p class="text-lg text-white text-center w-full md:max-w-[700px]">
+				LoomLetter is launching soon! Join our waitlist to get early access and stay updated on the
+				latest features and news. Don’t miss out on transforming your newsletter experience.
+			</p>
+		</div>
+		<div class="w-full md:w-[1000px] shrink-0 flex items-center justify-center">
+			{#if joining}
+				{#key 'joining-state'}
+					<div
+						class="bg-white/10 w-fit py-3 px-6 rounded-2xl flex flex-row gap-3 items-center"
+						transition:fade
+					>
+						<Spinner width={30} height={30} />
+						<p class="text-lg">Joining...</p>
+					</div>
+				{/key}
+			{:else if joined}
+				{#key 'joined-state'}
+					<div
+						class="-bg-gradient w-fit py-3 px-6 rounded-2xl flex flex-row gap-3 items-center"
+						transition:fade
+					>
+						<p class="text-lg text-black font-medium">
+							Thank you for joining! You'll be one of the first to know!
+						</p>
+					</div>
+				{/key}
+			{:else}
+				{#key 'join-form'}
+					<form
+						class="flex flex-row justify-center items-center gap-6"
+						transition:fade
+						on:submit={onJoinWaitList}
+					>
+						<input
+							type="#"
+							class="w-[300px] border-[3px] border-[#00E0FF] outline-[#00E0FF] bg-white p-3 rounded-xl text-center text-black"
+							placeholder="Enter your Email Address"
+							bind:value={emailAddress}
+						/>
+
+						<button
+							class="w-fit bg-white/10 hover:bg-white/30 px-7 py-3 rounded-3xl font-bold transition-all text-lg"
+							><p class="-text-gradient">Join Waitlist</p></button
+						>
+					</form>
+				{/key}
+			{/if}
+		</div>
+	</div>
+</section>
+
+<section class="w-full pb-[200px]">
+	<div class="flex flex-col gap-20 items-center">
+		<div class="flex-grow flex flex-col gap-8 justify-start">
+			<h1 class="text-4xl -text-gradient font-bold text-center">Frequently Asked Questions</h1>
+		</div>
+		<div class="w-full md:w-[1000px] shrink-0">
+			{#each faq as qa}
+				<div class="py-7 border-b border-white/10">
+					<p class="text-2xl text-white font-medium mb-3">{qa.question}</p>
+					<p class="text-white/80">{qa.answer}</p>
+				</div>
+			{/each}
 		</div>
 	</div>
 </section>

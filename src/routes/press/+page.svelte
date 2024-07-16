@@ -18,14 +18,14 @@
 		<h2 class="text-2xl font-semibold mb-4">About LoomLetter</h2>
 
 		<p class="text-white/80">
-			LoomLetter is your ultimate solution for staying connected with your favorite newsletters
-			effortlessly. Seamlessly syncing with your inbox, LoomLetter extracts and organizes
-			newsletters, making them easily accessible in one place. With features like AI Reading for
-			listening to your favorite newsletters on-the-go, widgets for quick access on the latest
-			newsletters, instant notifications for new content, and offline support for reading anywhere,
-			LoomLetter redefines how you engage with your newsletters. Designed with convenience and user
-			experience in mind, LoomLetter ensures you never miss an update, providing a polished and
-			intuitive interface that simplifies your digital reading experience.
+			LoomLetter is the ultimate newsletter reader for busy professionals who simply don’t have the
+			time. Seamlessly syncing with your inbox, LoomLetter extracts and organizes newsletters,
+			making them easily accessible in one place. With features like AI-powered reading for
+			listening on-the-go, widgets for quick access, instant notifications for new content, and
+			offline support for reading anywhere, LoomLetter redefines how you engage with your
+			newsletters. Designed with convenience and user experience in mind, LoomLetter ensures you
+			never miss an update, providing a polished and intuitive interface that simplifies your
+			digital reading experience.
 		</p>
 	</section>
 

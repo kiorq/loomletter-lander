@@ -135,9 +135,9 @@
 			</p>
 
 			<p class="text-lg text-white text-center w-full md:max-w-[700px]">
-				Effortlessly catch up on newsletters while commuting, exercising, or multitasking with
-				LoomLetter’s AI-powered narration. Enjoy hands-free, engaging listening that fits perfectly
-				into your busy lifestyle.
+				Stay on top of your newsletters with real-time push notifications. Get instant alerts the
+				moment new content arrives, ensuring you never miss an update. Stay informed and connected,
+				effortlessly.
 			</p>
 		</div>
 		<div class="w-full md:w-[700px] shrink-0">
@@ -149,12 +149,13 @@
 <section class="w-full pb-20 md:pb-[200px]">
 	<div class="flex flex-col gap-20 items-center">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
-			<p class="text-3xl md:text-6xl -text-gradient font-bold text-center">Widgets</p>
+			<p class="text-3xl md:text-6xl -text-gradient font-bold text-center">Quick Access Widgets</p>
 
 			<p class="text-lg text-white text-center w-full md:max-w-[700px]">
-				Stay on top of your newsletters with real-time push notifications. Get instant alerts the
-				moment new content arrives, ensuring you never miss an update. Stay informed and connected,
-				effortlessly.
+				Instantly access your favorite newsletters right from your home screen. LoomLetter’s widgets
+				make it easy to stay updated with the latest content at a glance. Customize your widgets to
+				display the newsletters that matter most to you, providing a seamless and convenient reading
+				experience.
 			</p>
 		</div>
 		<div class="w-full md:w-[1000px] shrink-0">

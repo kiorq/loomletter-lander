@@ -6,7 +6,7 @@
 	<title>Newsletter Reader - LoomLetter</title>
 	<meta
 		name="description"
-		content="LoomLetter: Your ultimate solution for managing and reading newsletters. Stay on top of your newsletter subscriptions, inbox spam, and morning briefings with ease. Experience smarter, short form content from sources like Headway app and Substack. Read emails, articles, and more with our intuitive newsletter reader. Perfect for microlearning and self-improvement."
+		content="The newsletter reader for busy professionals. With LoomLetter's AI-powered newsletter narrator, effortlessly manage and listen to your favorite newsletters on the go. Stay on top of subscriptions with push notifications, quick access widgets and more. Perfect for staying informed and productive."
 	/>
 	<link rel="icon" href="/logo.svg" />
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />

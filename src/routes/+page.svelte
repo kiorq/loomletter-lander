@@ -270,7 +270,7 @@
 			{#each faq as qa}
 				<div class="py-7 border-b last:border-0 border-white/10">
 					<p class="text-2xl text-white font-medium mb-3">{qa.question}</p>
-					<p class="text-white/80">{qa.answer}</p>
+					<p class="text-white/80 font-light">{qa.answer}</p>
 				</div>
 			{/each}
 		</div>

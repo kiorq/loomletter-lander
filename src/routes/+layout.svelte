@@ -1,5 +1,16 @@
 <script>
+	import { onMount } from 'svelte';
 	import './styles.css';
+	import * as Cronitor from '@cronitorio/cronitor-rum';
+
+	onMount(() => {
+		Cronitor.load('959b2cc170ea006b2c510769386737a6', {
+			debug: false,
+			trackMode: 'history'
+		});
+	});
+
+	// Cronitor.track("NewsletterSignup");
 </script>
 
 <svelte:head>

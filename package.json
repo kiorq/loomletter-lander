@@ -37,6 +37,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@cronitorio/cronitor-rum": "^0.4.1",
 		"@supabase/supabase-js": "^2.44.2",
 		"is-email": "^1.0.2"
 	}

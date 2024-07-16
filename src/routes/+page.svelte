@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { fade, slide } from 'svelte/transition';
 	import Spinner from '../lib/components/Spinner.svelte';
+	import { track } from '@cronitorio/cronitor-rum';
 
 	const faq = [
 		{
@@ -52,6 +53,8 @@
 		event.stopPropagation();
 		joining = true;
 
+		track('WaitListSubmit');
+
 		try {
 			const response = await fetch('/join-waitlist', {
 				method: 'POST',
@@ -62,16 +65,22 @@
 			});
 
 			if (!response.ok) {
+				track('WaitListFail');
 				throw new Error(`HTTP error! status: ${response.status}`);
 			}
 
 			const data = await response.json();
 			if (data.ok) {
 				joined = true;
+				track('WaitListSuccess');
 			}
 		} finally {
 			joining = false;
 		}
+	};
+
+	const onHeroCtaClick = () => {
+		track('HeroCtaClick');
 	};
 </script>
 
@@ -91,6 +100,7 @@
 
 			<div class="w-full flex lg:justify-start justify-center">
 				<a
+					on:click={onHeroCtaClick}
 					class="w-fit bg-white/10 hover:bg-white/30 px-9 py-4 rounded-full font-bold transition-all"
 					href="#waitlist"><p class="-text-gradient text-xl">Exclusive Early Access</p></a
 				>

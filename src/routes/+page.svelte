@@ -216,8 +216,8 @@
 
 			<p class="text-lg text-white text-center w-full md:max-w-[700px]">
 				LoomLetter is launching soon on August 15th. You can join our waitlist to get early access
-				and stay updated on the latest features and news. Don’t miss out on transforming your
-				newsletter experience.
+				and stay updated on the latest features and news and stop Letting Your Favorite Newsletters
+				Pile Up.
 			</p>
 		</div>
 		<div class="w-full md:w-[1000px] shrink-0 flex flex-col items-center justify-center">

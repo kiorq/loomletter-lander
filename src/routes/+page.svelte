@@ -2,6 +2,8 @@
 	import { fade, slide } from 'svelte/transition';
 	import Spinner from '../lib/components/Spinner.svelte';
 	import { track } from '@cronitorio/cronitor-rum';
+	import mixpanel from 'mixpanel-browser';
+	import { onMount } from 'svelte';
 
 	const faq = [
 		{
@@ -54,6 +56,7 @@
 		joining = true;
 
 		track('WaitListSubmit');
+		mixpanel.track('WaitListSubmit');
 
 		try {
 			const response = await fetch('/join-waitlist', {
@@ -66,6 +69,7 @@
 
 			if (!response.ok) {
 				track('WaitListFail');
+				mixpanel.track('WaitListFail');
 				throw new Error(`HTTP error! status: ${response.status}`);
 			}
 
@@ -73,6 +77,7 @@
 			if (data.ok) {
 				joined = true;
 				track('WaitListSuccess');
+				mixpanel.track('WaitListSuccess');
 			}
 		} finally {
 			joining = false;
@@ -81,7 +86,12 @@
 
 	const onHeroCtaClick = () => {
 		track('HeroCtaClick');
+		mixpanel.track('HeroCtaClick');
 	};
+
+	onMount(() => {
+		mixpanel.track_pageview();
+	});
 </script>
 
 <section class="w-full pb-20 md:py-[120px]">

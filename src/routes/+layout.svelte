@@ -2,15 +2,21 @@
 	import { onMount } from 'svelte';
 	import './styles.css';
 	import * as Cronitor from '@cronitorio/cronitor-rum';
+	import mixpanel from 'mixpanel-browser';
+
+	// Near entry of your product, init Mixpanel
 
 	onMount(() => {
 		Cronitor.load('959b2cc170ea006b2c510769386737a6', {
 			debug: false,
 			trackMode: 'history'
 		});
+		mixpanel.init('90c925075e28665e77389e4699dbb029', {
+			debug: true,
+			track_pageview: true,
+			persistence: 'localStorage'
+		});
 	});
-
-	// Cronitor.track("NewsletterSignup");
 </script>
 
 <svelte:head>

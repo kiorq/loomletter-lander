@@ -2,7 +2,6 @@
 	import { slide } from 'svelte/transition';
 	import Spinner from '../lib/components/Spinner.svelte';
 	import mixpanel from 'mixpanel-browser';
-	import { onMount } from 'svelte';
 
 	const faq = [
 		{
@@ -84,10 +83,6 @@
 	const onHeroCtaClick = () => {
 		mixpanel.track('HeroCtaClick');
 	};
-
-	onMount(() => {
-		mixpanel.track_pageview();
-	});
 </script>
 
 <section class="w-full pb-20 md:py-[120px]">

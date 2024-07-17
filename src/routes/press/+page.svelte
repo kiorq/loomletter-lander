@@ -1,6 +1,5 @@
 <script lang="ts">
 	import mixpanel from 'mixpanel-browser';
-	import { onMount } from 'svelte';
 
 	const onTrackDownload = (name: string) => () => {
 		mixpanel.track('PressDwn_' + name);
@@ -9,10 +8,6 @@
 	const onContactTrack = () => {
 		mixpanel.track('PressContactClick');
 	};
-
-	onMount(() => {
-		mixpanel.track_pageview();
-	});
 </script>
 
 <svelte:head>

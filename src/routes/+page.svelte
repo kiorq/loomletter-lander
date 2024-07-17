@@ -46,7 +46,7 @@
 
 	let emailAddress = '';
 	let joining = false;
-	let joined = true;
+	let joined = false;
 
 	const onJoinWaitList = async (event: SubmitEvent) => {
 		event.preventDefault();

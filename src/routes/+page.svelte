@@ -279,7 +279,7 @@
 <section class="w-full pb-[200px]">
 	<div class="flex flex-col gap-10 md:gap-20 items-center">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
-			<h1 class="text-3xl -text-gradient font-bold text-center">Frequently Asked Questions</h1>
+			<p class="text-3xl -text-gradient font-bold text-center">Frequently Asked Questions</p>
 		</div>
 		<div class="w-full md:w-[1000px] shrink-0">
 			{#each faq as qa}

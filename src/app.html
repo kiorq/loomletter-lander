@@ -7,6 +7,13 @@
 		%sveltekit.head%
 
 		
+		
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+
+
+		
 		<script>
 			window['_fs_host'] = 'fullstory.com';
 			window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
@@ -29,11 +36,5 @@
 			f="XMLHttpRequest",g._w={},g._w[f]=m[f],g._w[s]=m[s],m[s]&&(m[s]=function(){return g._w[s].apply(this,arguments)}),g._v="2.0.0")
 			}(window,document,window._fs_namespace,"script",window._fs_script);
 			</script>
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-
-
-		
 	</body>
 </html>

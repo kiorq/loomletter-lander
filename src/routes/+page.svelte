@@ -46,7 +46,7 @@
 
 	let emailAddress = '';
 	let joining = false;
-	let joined = false;
+	let joined = true;
 
 	const onJoinWaitList = async (event: SubmitEvent) => {
 		event.preventDefault();
@@ -98,12 +98,16 @@
 				A Newsletter Reader for Busy Professionals
 			</p>
 
-			<div class="w-full flex lg:justify-start justify-center">
+			<div
+				class="w-full flex flex-col lg:flex-row lg:justify-start justify-center items-center gap-5"
+			>
 				<a
 					on:click={onHeroCtaClick}
 					class="w-fit bg-white/10 hover:bg-white/30 px-9 py-4 rounded-full font-bold transition-all"
 					href="#waitlist"><p class="-text-gradient text-xl">Exclusive Early Access</p></a
 				>
+
+				<p class="text-white/70">Launching on August 15, 2024</p>
 			</div>
 		</div>
 	</div>
@@ -210,8 +214,9 @@
 			</p>
 
 			<p class="text-lg text-white text-center w-full md:max-w-[700px]">
-				LoomLetter is launching soon! Join our waitlist to get early access and stay updated on the
-				latest features and news. Don’t miss out on transforming your newsletter experience.
+				LoomLetter is launching soon on August 15th. You can join our waitlist to get early access
+				and stay updated on the latest features and news. Don’t miss out on transforming your
+				newsletter experience.
 			</p>
 		</div>
 		<div class="w-full md:w-[1000px] shrink-0 flex flex-col items-center justify-center">
@@ -228,12 +233,21 @@
 			{:else if joined}
 				{#key 'joined-state'}
 					<div
-						class="-bg-gradient w-fit py-3 px-6 rounded-2xl flex flex-row gap-3 items-center"
 						transition:slide
+						class="w-full max-w-[500px] justify-center items-center flex-col flex gap-5 bg-white/10 py-10 rounded-3xl"
 					>
-						<p class="text-lg text-black font-medium text-center">
-							Thank you for joining!<br />You'll be one of the first to know!
+						<p class="text-6xl text-center">🥳</p>
+						<p class="text-3xl md:text-2xl -text-gradient font-bold text-center">
+							You'll be one of the first to know!
 						</p>
+
+						<p class="text-white/80 mt-5">Any questions?</p>
+						<a
+							class="-bg-simple-to-gradient bg-white/50 cursor-pointer w-fit py-3 px-6 rounded-2xl flex flex-row gap-3 items-center font-light"
+							href="mailto:loomletter@digidouglas.com"
+						>
+							<p class="text-lg text-black font-medium text-center">Let's get in touch</p>
+						</a>
 					</div>
 				{/key}
 			{:else}
@@ -270,7 +284,7 @@
 			{#each faq as qa}
 				<div class="py-7 border-b last:border-0 border-white/10">
 					<p class="text-2xl text-white font-medium mb-3">{qa.question}</p>
-					<p class="text-white/80 font-light">{qa.answer}</p>
+					<p class="text-white/90 font-light">{qa.answer}</p>
 				</div>
 			{/each}
 		</div>

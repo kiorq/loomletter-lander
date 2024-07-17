@@ -16,7 +16,10 @@ body {
 
 .-bg-gradient {
     background: linear-gradient(to right, #32F3AE, #00E0FF);
+}
 
+.-bg-simple-to-gradient:hover {
+    background: linear-gradient(to right, #32F3AE, #00E0FF);
 }
 
 @keyframes fadeInOut {

@@ -1,15 +1,12 @@
 <script lang="ts">
-	import { track } from '@cronitorio/cronitor-rum';
 	import mixpanel from 'mixpanel-browser';
 	import { onMount } from 'svelte';
 
 	const onTrackDownload = (name: string) => () => {
-		track('PressDwn_' + name);
 		mixpanel.track('PressDwn_' + name);
 	};
 
 	const onContactTrack = () => {
-		track('PressContactClick');
 		mixpanel.track('PressContactClick');
 	};
 

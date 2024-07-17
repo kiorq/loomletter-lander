@@ -1,7 +1,6 @@
 <script lang="ts">
-	import { fade, slide } from 'svelte/transition';
+	import { slide } from 'svelte/transition';
 	import Spinner from '../lib/components/Spinner.svelte';
-	import { track } from '@cronitorio/cronitor-rum';
 	import mixpanel from 'mixpanel-browser';
 	import { onMount } from 'svelte';
 
@@ -55,7 +54,6 @@
 		event.stopPropagation();
 		joining = true;
 
-		track('WaitListSubmit');
 		mixpanel.track('WaitListSubmit');
 
 		try {
@@ -68,7 +66,6 @@
 			});
 
 			if (!response.ok) {
-				track('WaitListFail');
 				mixpanel.track('WaitListFail');
 				throw new Error(`HTTP error! status: ${response.status}`);
 			}
@@ -76,7 +73,7 @@
 			const data = await response.json();
 			if (data.ok) {
 				joined = true;
-				track('WaitListSuccess');
+
 				mixpanel.track('WaitListSuccess');
 			}
 		} finally {
@@ -85,7 +82,6 @@
 	};
 
 	const onHeroCtaClick = () => {
-		track('HeroCtaClick');
 		mixpanel.track('HeroCtaClick');
 	};
 

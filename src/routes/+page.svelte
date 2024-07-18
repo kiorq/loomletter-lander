@@ -49,6 +49,10 @@
 	let joining = false;
 	let joined = false;
 
+	const onChangeEmailAddress = () => {
+		mixpanel.track('SetEmailAddress');
+	};
+
 	const onJoinWaitList = async (event: SubmitEvent) => {
 		event.preventDefault();
 		event.stopPropagation();
@@ -87,6 +91,7 @@
 
 	const onTrackViewSection = (sectionName: string) => () => {
 		mixpanel.track('ViewSection_' + sectionName);
+		mixpanel.track('ViewSection', { sectionName });
 	};
 </script>
 
@@ -97,11 +102,12 @@
 		</div>
 		<div class="flex-grow flex flex-col gap-5 justify-start">
 			<h1 class="text-4xl text-center md:text-left md:text-6xl -text-gradient font-bold">
-				Stop Letting Your Favorite Newsletters Pile Up
+				<!-- TODO: i like this one alot "What If You Never Missed a Newsletter Again?"" -->
+				Read Newsletters in Half the Time
 			</h1>
 
 			<p class="text-lg md:text-2xl text-white text-center md:text-left">
-				A Newsletter Reader for Busy Professionals
+				Cut Your Newsletter Reading Time by 50%
 			</p>
 
 			<div
@@ -272,6 +278,7 @@
 							class="w-[300px] border-[3px] border-[#00E0FF] outline-[#00E0FF] bg-white p-3 rounded-xl text-center text-black"
 							placeholder="Enter your Email Address"
 							bind:value={emailAddress}
+							on:change={onChangeEmailAddress}
 						/>
 
 						<button

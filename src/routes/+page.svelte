@@ -116,7 +116,7 @@
 				<a
 					on:click={onHeroCtaClick}
 					class="w-fit bg-white/10 hover:bg-white/30 px-9 py-4 rounded-full font-bold transition-all"
-					href="#waitlist"><p class="-text-gradient text-xl">Exclusive Early Access</p></a
+					href="#waitlist"><p class="-text-gradient text-xl">Get Early Access</p></a
 				>
 
 				<p class="text-white/70">Launching on August 15, 2024</p>
@@ -226,13 +226,12 @@
 	<div class="flex flex-col gap-10 md:gap-20 items-center">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
 			<p class="text-3xl md:text-6xl -text-gradient font-bold text-center">
-				Exclusive Early Access
+				Early Access Just for You
 			</p>
 
 			<p class="text-lg text-white text-center w-full md:max-w-[700px]">
-				LoomLetter is launching soon on August 15th. You can join our waitlist to get early access
-				and stay updated on the latest features and news and stop Letting Your Favorite Newsletters
-				Pile Up.
+				Be among the first to experience LoomLetter and transform the way you manage your
+				newsletters.
 			</p>
 		</div>
 		<div class="w-full md:w-[1000px] shrink-0 flex flex-col items-center justify-center">

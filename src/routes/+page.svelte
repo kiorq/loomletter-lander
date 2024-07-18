@@ -107,7 +107,7 @@
 			</h1>
 
 			<p class="text-lg md:text-2xl text-white text-center md:text-left">
-				Cut Your Newsletter Reading Time by 50%
+				Tailored for Time-Strapped Professionals
 			</p>
 
 			<div

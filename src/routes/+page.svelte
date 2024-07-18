@@ -2,6 +2,7 @@
 	import { slide } from 'svelte/transition';
 	import Spinner from '../lib/components/Spinner.svelte';
 	import mixpanel from 'mixpanel-browser';
+	import { whenInView } from '$lib/lib';
 
 	const faq = [
 		{
@@ -83,9 +84,13 @@
 	const onHeroCtaClick = () => {
 		mixpanel.track('HeroCtaClick');
 	};
+
+	const onTrackViewSection = (sectionName: string) => () => {
+		mixpanel.track('ViewSection_' + sectionName);
+	};
 </script>
 
-<section class="w-full pb-20 md:py-[120px]">
+<section class="w-full pb-20 md:py-[120px]" use:whenInView={onTrackViewSection('Hero')}>
 	<div class="flex flex-col-reverse md:flex-row gap-8 items-center">
 		<div class="w-full md:w-[502px] shrink-0">
 			<img src="/iphones.png" class="w-full h-auto" />
@@ -114,7 +119,7 @@
 	</div>
 </section>
 
-<section class="w-full pb-20 md:pb-[200px]">
+<section class="w-full pb-20 md:pb-[200px]" use:whenInView={onTrackViewSection('AIRead')}>
 	<div class="flex flex-col-reverse md:flex-row gap-0 items-center">
 		<div class="flex-grow flex flex-col justify-start mt-[-100px] md:mt-0">
 			<div
@@ -142,7 +147,7 @@
 	</div>
 </section>
 
-<section class="w-full pb-20 md:pb-[200px]">
+<section class="w-full pb-20 md:pb-[200px]" use:whenInView={onTrackViewSection('PushN')}>
 	<div class="flex flex-col gap-10 md:gap-20 items-center">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
 			<p class="text-3xl md:text-6xl -text-gradient font-bold text-center">
@@ -161,7 +166,7 @@
 	</div>
 </section>
 
-<section class="w-full pb-20 md:pb-[200px]">
+<section class="w-full pb-20 md:pb-[200px]" use:whenInView={onTrackViewSection('Widgets')}>
 	<div class="flex flex-col gap-10 md:gap-20 items-center">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
 			<p class="text-3xl md:text-6xl -text-gradient font-bold text-center">Quick Access Widgets</p>
@@ -180,7 +185,7 @@
 	</div>
 </section>
 
-<section class="w-full pb-20 md:pb-[200px]">
+<section class="w-full pb-20 md:pb-[200px]" use:whenInView={onTrackViewSection('NoSignUp')}>
 	<div class="flex flex-col gap-10 md:gap-20 items-center">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
 			<p class="text-3xl md:text-6xl -text-gradient font-bold text-center">No Sign-Up Needed</p>
@@ -207,7 +212,11 @@
 	</div>
 </section>
 
-<section class="w-full pb-20 md:pb-[200px] pt-8" id="waitlist">
+<section
+	class="w-full pb-20 md:pb-[200px] pt-8"
+	id="waitlist"
+	use:whenInView={onTrackViewSection('WaitList')}
+>
 	<div class="flex flex-col gap-10 md:gap-20 items-center">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
 			<p class="text-3xl md:text-6xl -text-gradient font-bold text-center">
@@ -276,7 +285,7 @@
 	</div>
 </section>
 
-<section class="w-full pb-[200px]">
+<section class="w-full pb-[200px]" use:whenInView={onTrackViewSection('Faq')}>
 	<div class="flex flex-col gap-10 md:gap-20 items-center">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
 			<p class="text-3xl -text-gradient font-bold text-center">Frequently Asked Questions</p>

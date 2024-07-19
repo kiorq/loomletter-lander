@@ -61,7 +61,7 @@
 		<div class="flex-grow flex flex-col gap-5 justify-start">
 			<h1 class="text-4xl text-center md:text-left md:text-6xl -text-gradient font-bold">
 				<!-- TODO: i like this one alot "What If You Never Missed a Newsletter Again?"" -->
-				Read Newsletters in Half the Time
+				Read Newsletters<br />in Half the Time
 			</h1>
 
 			<p class="text-lg md:text-2xl text-white text-center md:text-left">
@@ -69,12 +69,15 @@
 			</p>
 
 			<div
-				class="w-full flex flex-col lg:flex-row lg:justify-start justify-center items-center gap-5"
+				class="w-full flex flex-col md:justify-start md:items-start justify-center items-center gap-5 mt-3"
 			>
 				<a
 					on:click={onHeroCtaClick}
-					class="w-fit bg-white/10 hover:bg-white/30 px-9 py-4 rounded-full font-bold transition-all"
-					href="#waitlist"><p class="-text-gradient text-xl">Unlock Exclusive Early Access</p></a
+					class="-cta-gradient w-fit bg-white/10 hover:bg-white/30 px-5 md:px-9 py-4 rounded-full font-bold transition-all"
+					href="#waitlist"
+					><p class="text-black text-xl lg:text-2xl text-center">
+						Unlock Exclusive Early Access
+					</p></a
 				>
 
 				<p class="text-white/70">Launching on August 15, 2024</p>

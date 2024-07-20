@@ -1,15 +1,15 @@
 <script lang="ts">
 	import { slide } from 'svelte/transition';
 	import Spinner from './Spinner.svelte';
-	import mixpanel from 'mixpanel-browser';
 	import { whenInView } from '$lib/lib';
+	import { track } from '$lib/track';
+	import { goto } from '$app/navigation';
 
 	let emailAddress = '';
 	let joining = false;
-	let joined = false;
 
 	const onChangeEmailAddress = () => {
-		mixpanel.track('SetEmailAddress');
+		track('SetEmailAddress');
 	};
 
 	const onJoinWaitList = async (event: SubmitEvent) => {
@@ -17,7 +17,7 @@
 		event.stopPropagation();
 		joining = true;
 
-		mixpanel.track('WaitListSubmit');
+		track('WaitListSubmit');
 
 		try {
 			const response = await fetch('/join-waitlist', {
@@ -29,15 +29,13 @@
 			});
 
 			if (!response.ok) {
-				mixpanel.track('WaitListFail');
+				track('WaitListFail');
 				throw new Error(`HTTP error! status: ${response.status}`);
 			}
 
 			const data = await response.json();
 			if (data.ok) {
-				joined = true;
-
-				mixpanel.track('WaitListSuccess');
+				goto('/thank-you');
 			}
 		} finally {
 			joining = false;
@@ -45,7 +43,7 @@
 	};
 
 	const onTrackViewSection = (sectionName: string) => () => {
-		mixpanel.track('ViewSection_' + sectionName);
+		track('ViewSection_' + sectionName);
 	};
 </script>
 
@@ -74,26 +72,6 @@
 					>
 						<Spinner width={30} height={30} />
 						<p class="text-lg">Joining...</p>
-					</div>
-				{/key}
-			{:else if joined}
-				{#key 'joined-state'}
-					<div
-						transition:slide
-						class="w-full max-w-[500px] justify-center items-center flex-col flex gap-5 bg-white/10 py-10 rounded-3xl"
-					>
-						<p class="text-6xl text-center">🥳</p>
-						<p class="text-3xl md:text-2xl -text-gradient font-bold text-center">
-							You'll be one of the first to know!
-						</p>
-
-						<p class="text-white/80 mt-5">Any questions?</p>
-						<a
-							class="-bg-simple-to-gradient bg-white/50 cursor-pointer w-fit py-3 px-6 rounded-2xl flex flex-row gap-3 items-center font-light"
-							href="mailto:loomletter@digidouglas.com"
-						>
-							<p class="text-lg text-black font-medium text-center">Let's get in touch</p>
-						</a>
 					</div>
 				{/key}
 			{:else}

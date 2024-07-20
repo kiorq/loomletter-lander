@@ -1,7 +1,7 @@
 <script lang="ts">
-	import mixpanel from 'mixpanel-browser';
 	import { whenInView } from '$lib/lib';
 	import WaitlistSection from '$lib/components/WaitlistSection.svelte';
+	import { track } from '$lib/track';
 
 	const faq = [
 		{
@@ -45,11 +45,11 @@
 	];
 
 	const onHeroCtaClick = () => {
-		mixpanel.track('HeroCtaClick');
+		track('HeroCtaClick');
 	};
 
 	const onTrackViewSection = (sectionName: string) => () => {
-		mixpanel.track('ViewSection_' + sectionName);
+		track('ViewSection_' + sectionName);
 	};
 </script>
 

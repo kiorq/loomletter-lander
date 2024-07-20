@@ -1,12 +1,12 @@
 <script lang="ts">
-	import mixpanel from 'mixpanel-browser';
+	import { track } from '$lib/track';
 
 	const onTrackDownload = (name: string) => () => {
-		mixpanel.track('PressDwn_' + name);
+		track('PressDwn_' + name);
 	};
 
 	const onContactTrack = () => {
-		mixpanel.track('PressContactClick');
+		track('PressContactClick');
 	};
 </script>
 

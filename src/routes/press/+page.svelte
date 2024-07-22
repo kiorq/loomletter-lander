@@ -131,6 +131,21 @@
 	</section>
 
 	<section class="mb-8">
+		<h2 class="text-2xl font-semibold mb-4">Promo Poster</h2>
+
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+			<a
+				href="/press/ad-1.png"
+				download="loomletter-ad-copy-1.png"
+				class="downloadable-asset"
+				on:click={onTrackDownload('Ad1')}
+			>
+				<img src="/press/ad-1.png" />
+			</a>
+		</div>
+	</section>
+
+	<section class="mb-8">
 		<h2 class="text-2xl font-semibold mb-4">Anymore questions?</h2>
 
 		<p class="text-white/80">

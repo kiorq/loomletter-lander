@@ -32,6 +32,17 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 	<link rel="manifest" href="/site.webmanifest" />
 
+	<meta property="og:title" content="The Newsletter Reader for Professionals - LoomLetter" />
+	<meta property="og:image" content="https://loomletter.app/press/press-2.png" />
+
+	<meta name="twitter:title" content="The Newsletter Reader for Professionals - LoomLetter" />
+	<meta
+		name="twitter:description"
+		content="The newsletter reader tailored for time-strapped professionals. With LoomLetter's AI-powered newsletter narrator, effortlessly manage and listen to your favorite newsletters on the go. Stay on top of subscriptions with push notifications, quick access widgets, and more. Perfect for staying informed and productive."
+	/>
+	<meta name="twitter:image" content="https://loomletter.app/press/press-2.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+
 	<meta
 		name="keywords"
 		content="

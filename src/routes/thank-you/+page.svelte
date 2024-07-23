@@ -1,4 +1,8 @@
 <script lang="ts">
+	import Facebook from '$lib/components/icons/Facebook.svelte';
+	import LinkedIn from '$lib/components/icons/LinkedIn.svelte';
+	import Threads from '$lib/components/icons/Threads.svelte';
+	import Twitter from '$lib/components/icons/Twitter.svelte';
 	import { track, trackLead } from '$lib/track';
 	import { onMount } from 'svelte';
 
@@ -25,6 +29,45 @@
 					Thank you for joining the waitlist for LoomLetter! We’re excited to have you on board.
 				</p>
 			</div>
+
+			<div class="w-full flex flex-col gap-5 max-w-[500px]">
+				<p class="text-xl font-semibold text-center -text-gradient">Spread the word</p>
+
+				<div class="flex flex-row gap-4 justify-center items-center">
+					<a
+						class="text-white bg-white/10 p-3 aspect-square rounded-full hover:bg-white/40 transition-all"
+						href="https://www.facebook.com/sharer/sharer.php?u=loomletter.app"
+						target="_blank"
+					>
+						<Facebook width={40} height={40} />
+					</a>
+
+					<a
+						class="text-white bg-white/10 p-3 aspect-square rounded-full hover:bg-white/40 transition-all"
+						href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Floomletter.app&title=Join%20LoomLetter%20Early%20Adopter%20Program&summary=I%20just%20signed%20up%20for%20the%20Early%20Adopter%20Program%20for%20LoomLetter!%20📧✨%20LoomLetter%20is%20an%20app%20designed%20to%20help%20busy%20professionals%20manage%20and%20consume%20newsletters%20efficiently.%20Features%20include%20AI-powered%20narration,%20smart%20filters,%20and%20easy%20access%20widgets.%20Join%20me%20and%20be%20among%20the%20first%20to%20experience%20it!"
+						target="_blank"
+					>
+						<LinkedIn width={40} height={40} />
+					</a>
+
+					<a
+						class="text-white bg-white/10 p-3 aspect-square rounded-full hover:bg-white/40 transition-all"
+						href="https://threads.net/intent/post?text=I%20just%20signed%20up%20for%20the%20Early%20Adopter%20Program%20for%20LoomLetter!%20%F0%9F%93%A7%E2%9C%A8%20LoomLetter%20is%20an%20app%20designed%20to%20help%20busy%20professionals%20manage%20and%20consume%20newsletters%20efficiently.%20Features%20include%20AI-powered%20narration,%20smart%20filters,%20and%20easy%20access%20widgets.%20Join%20me%20and%20be%20among%20the%20first%20to%20experience%20it:%20https%3A%2F%2Floomletter.app"
+						target="_blank"
+					>
+						<Threads width={40} height={40} />
+					</a>
+
+					<a
+						class="text-white bg-white/10 p-3 aspect-square rounded-full hover:bg-white/40 transition-all"
+						href="https://twitter.com/intent/tweet?text=I%20just%20signed%20up%20for%20the%20Early%20Adopter%20Program%20for%20LoomLetter!%20📧✨%20LoomLetter%20is%20an%20app%20designed%20to%20help%20busy%20professionals%20manage%20and%20consume%20newsletters%20efficiently.%20Features%20include%20AI-powered%20narration,%20smart%20filters,%20and%20easy%20access%20widgets.%20Join%20me%20and%20be%20among%20the%20first%20to%20experience%20it:%20https%3A%2F%2Floomletter.app"
+						target="_blank"
+					>
+						<Twitter width={40} height={40} />
+					</a>
+				</div>
+			</div>
+
 			<div class="w-full flex flex-col gap-3 max-w-[500px]">
 				<p class="text-xl font-semibold text-center">Here's what's next</p>
 

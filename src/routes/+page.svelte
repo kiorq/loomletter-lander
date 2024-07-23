@@ -5,24 +5,44 @@
 
 	const faq = [
 		{
+			question: 'What is the Early Adopter Program?',
+			answer:
+				'The Early Adopter Program allows you to be among the first to experience LoomLetter. By joining, you get exclusive early access to new features and updates, and your feedback will help shape the future of the app.'
+		},
+		{
+			question: 'How do I join the Early Adopter Program?',
+			answer:
+				'To join the Early Adopter Program, simply sign up on our waitlist. You’ll be one of the first to receive access and will be able to provide feedback directly to our development team.'
+		},
+		{
+			question: 'What are the benefits of joining the Early Adopter Program?',
+			answer:
+				'As an early adopter, you’ll enjoy exclusive early access to LoomLetter, the opportunity to influence the app’s development, and special recognition within our community. Your insights and feedback will directly contribute to making LoomLetter better for everyone.'
+		},
+		{
 			question: 'How does LoomLetter protect my privacy?',
 			answer:
-				'All your data is processed securely on your device, ensuring that your personal information remains private and protected. We do not store your email contents on our servers. Only a secure, encrypted refresh token is stored to maintain your account connection.'
+				'Your data is processed securely on your device. We do not store your email contents on our servers, and only a secure, encrypted token is stored to maintain your account connection.'
 		},
 		{
 			question: 'Why does LoomLetter need access to my email?',
 			answer:
-				'LoomLetter needs access to your email to fetch your newsletters and keep them organized in one place. This access is handled securely, and your email content is processed only on your device.'
+				'LoomLetter fetches your newsletters to keep them organized in one place. This access is handled securely, and your email content is processed only on your device.'
 		},
 		{
-			question: 'Is my email data stored on LoomLetter’s servers?',
+			question: 'What are the key features of LoomLetter?',
 			answer:
-				'No, your email data is not stored on our servers. All email content is processed on your device. Our servers only handle the secure, encrypted refresh token needed to maintain your account connection with your device.'
+				'LoomLetter offers AI-powered newsletter narration, home screen widgets for easy access, and smart filters to organize your newsletters. It’s designed to make staying informed convenient and efficient.'
 		},
 		{
 			question: 'How can I disconnect my email account from LoomLetter?',
 			answer:
-				'You can disconnect your email account from LoomLetter in the app settings and tapping the Log Out button. This will stop all data synchronization and remove any saved data from the app and your token from our servers.'
+				'You can disconnect your email account in the app settings by tapping the Log Out button. This will stop all data synchronization and remove any saved data from the app and your token from our servers.'
+		},
+		{
+			question: 'What makes LoomLetter different from other newsletter readers?',
+			answer:
+				'LoomLetter focuses on convenience for busy professionals with features like AI narration and easy access widgets, providing a seamless and efficient way to stay updated.'
 		}
 	];
 
@@ -74,13 +94,8 @@
 				<a
 					on:click={onHeroCtaClick}
 					class="-cta-gradient w-fit bg-white/10 hover:bg-white/30 px-5 md:px-9 py-4 rounded-full font-bold transition-all"
-					href="#waitlist"
-					><p class="text-black text-xl lg:text-2xl text-center">
-						Unlock Exclusive Early Access
-					</p></a
+					href="#waitlist"><p class="text-black text-xl lg:text-2xl text-center">Try Now</p></a
 				>
-
-				<p class="text-white/70">Launching on August 15, 2024</p>
 			</div>
 		</div>
 	</div>
@@ -179,12 +194,12 @@
 	</div>
 </section>
 
-<WaitlistSection />
+<WaitlistSection sectionName="WaitList1" />
 
-<section class="w-full pb-[200px]" use:whenInView={onTrackViewSection('Faq')}>
+<section class="w-full pb-20" use:whenInView={onTrackViewSection('Faq')}>
 	<div class="flex flex-col gap-10 md:gap-20 items-center">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
-			<p class="text-3xl -text-gradient font-bold text-center">Frequently Asked Questions</p>
+			<p class="text-3xl text-white font-bold text-center">Frequently Asked Questions</p>
 		</div>
 		<div class="w-full md:w-[1000px] shrink-0">
 			{#each faq as qa}
@@ -197,4 +212,4 @@
 	</div>
 </section>
 
-<WaitlistSection />
+<WaitlistSection sectionName="WaitList2" />

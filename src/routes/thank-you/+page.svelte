@@ -10,6 +10,10 @@
 		trackLead();
 		track('WaitListSuccess');
 	});
+
+	const onTrackShare = (media: string) => {
+		track('Share', { media });
+	};
 </script>
 
 <svelte:head>
@@ -38,6 +42,7 @@
 						class="text-white bg-white/10 p-3 aspect-square rounded-full hover:bg-white/40 transition-all"
 						href="https://www.facebook.com/sharer/sharer.php?u=loomletter.app"
 						target="_blank"
+						on:click={() => onTrackShare('Facebook')}
 					>
 						<Facebook width={40} height={40} />
 					</a>
@@ -46,6 +51,7 @@
 						class="text-white bg-white/10 p-3 aspect-square rounded-full hover:bg-white/40 transition-all"
 						href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Floomletter.app&title=Join%20LoomLetter%20Early%20Adopter%20Program&summary=I%20just%20signed%20up%20for%20the%20Early%20Adopter%20Program%20for%20LoomLetter!%20📧✨%20LoomLetter%20is%20an%20app%20designed%20to%20help%20busy%20professionals%20manage%20and%20consume%20newsletters%20efficiently.%20Features%20include%20AI-powered%20narration,%20smart%20filters,%20and%20easy%20access%20widgets.%20Join%20me%20and%20be%20among%20the%20first%20to%20experience%20it!"
 						target="_blank"
+						on:click={() => onTrackShare('LinkedIn')}
 					>
 						<LinkedIn width={40} height={40} />
 					</a>
@@ -54,6 +60,7 @@
 						class="text-white bg-white/10 p-3 aspect-square rounded-full hover:bg-white/40 transition-all"
 						href="https://threads.net/intent/post?text=I%20just%20signed%20up%20for%20the%20Early%20Adopter%20Program%20for%20LoomLetter!%20%F0%9F%93%A7%E2%9C%A8%20LoomLetter%20is%20an%20app%20designed%20to%20help%20busy%20professionals%20manage%20and%20consume%20newsletters%20efficiently.%20Features%20include%20AI-powered%20narration,%20smart%20filters,%20and%20easy%20access%20widgets.%20Join%20me%20and%20be%20among%20the%20first%20to%20experience%20it:%20https%3A%2F%2Floomletter.app"
 						target="_blank"
+						on:click={() => onTrackShare('Threads')}
 					>
 						<Threads width={40} height={40} />
 					</a>
@@ -62,6 +69,7 @@
 						class="text-white bg-white/10 p-3 aspect-square rounded-full hover:bg-white/40 transition-all"
 						href="https://twitter.com/intent/tweet?text=I%20just%20joined%20the%20LoomLetter%20Early%20Adopter%20Program!%20📧%20LoomLetter%20helps%20busy%20pros%20manage%20newsletters%20with%20AI-powered%20narration%20and%20smart%20filters.%20Join%20me:%20https%3A%2F%2Floomletter.app"
 						target="_blank"
+						on:click={() => onTrackShare('Twitter')}
 					>
 						<Twitter width={40} height={40} />
 					</a>

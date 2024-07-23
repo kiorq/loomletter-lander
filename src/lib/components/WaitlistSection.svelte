@@ -63,7 +63,7 @@
 			</p>
 
 			<p class="text-lg text-white text-center w-full md:max-w-[700px] mx-auto">
-				Enter your email address below and we'll send you details on how to get started.
+				After entering your email address, we'll send you details on how to get started.
 			</p>
 		</div>
 

@@ -1,21 +1,25 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 	import './styles.css';
 	import mixpanel from 'mixpanel-browser';
 	import { browser } from '$app/environment';
-
-	// Near entry of your product, init Mixpanel
+	import { refererData } from '$lib/track';
 
 	onMount(() => {
 		mixpanel.init('90c925075e28665e77389e4699dbb029', {
-			debug: true,
-			track_pageview: true,
+			debug: false,
 			persistence: 'localStorage',
 			ignore_dnt: true
 		});
 
 		if (browser) {
-			mixpanel.track_pageview();
+			mixpanel.track_pageview({
+				...refererData()
+			});
+
+			mixpanel.register_once({
+				...refererData()
+			});
 		}
 	});
 </script>

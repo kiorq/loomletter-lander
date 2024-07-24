@@ -2,8 +2,6 @@
 	import { whenInView } from '$lib/lib';
 	import WaitlistSection from '$lib/components/WaitlistSection.svelte';
 	import { track } from '$lib/track';
-	import { onMount } from 'svelte';
-	import { register_once } from 'mixpanel-browser';
 
 	const faq = [
 		{
@@ -73,12 +71,6 @@
 	const onTrackViewSection = (sectionName: string) => () => {
 		track('ViewSection_' + sectionName);
 	};
-
-	onMount(() => {
-		register_once({
-			x_initial_referrer: document?.referrer || 'N/A'
-		});
-	});
 </script>
 
 <section class="w-full pb-20 md:py-[120px]" use:whenInView={onTrackViewSection('Hero')}>

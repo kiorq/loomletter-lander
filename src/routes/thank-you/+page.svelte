@@ -3,16 +3,16 @@
 	import LinkedIn from '$lib/components/icons/LinkedIn.svelte';
 	import Threads from '$lib/components/icons/Threads.svelte';
 	import Twitter from '$lib/components/icons/Twitter.svelte';
-	import { track, trackLead } from '$lib/track';
+	import { refererData, track, trackLead } from '$lib/track';
 	import { onMount } from 'svelte';
 
 	onMount(() => {
 		trackLead();
-		track('WaitListSuccess');
+		track('WaitListSuccess', { ...refererData() });
 	});
 
 	const onTrackShare = (media: string) => {
-		track('Share', { media });
+		track('Share', { ...refererData(), media });
 	};
 </script>
 

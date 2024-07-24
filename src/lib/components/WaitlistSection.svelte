@@ -2,7 +2,7 @@
 	import { slide } from 'svelte/transition';
 	import Spinner from './Spinner.svelte';
 	import { whenInView } from '$lib/lib';
-	import { track } from '$lib/track';
+	import { refererData, track } from '$lib/track';
 	import { goto } from '$app/navigation';
 
 	export let sectionName: string;
@@ -15,7 +15,9 @@
 		event.stopPropagation();
 		joining = true;
 
-		track('WaitListSubmit');
+		track('WaitListSubmit', {
+			...refererData()
+		});
 
 		try {
 			const response = await fetch('/join-waitlist', {
@@ -27,13 +29,15 @@
 			});
 
 			if (!response.ok) {
-				track('WaitListFail');
+				track('WaitListFail', {
+					...refererData()
+				});
 				throw new Error(`HTTP error! status: ${response.status}`);
 			}
 
 			const data = await response.json();
 			if (data.ok) {
-				goto('/thank-you');
+				goto(`/thank-you${window.location.search || ''}`);
 			}
 		} finally {
 			joining = false;

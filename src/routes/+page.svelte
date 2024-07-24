@@ -76,7 +76,7 @@
 <section class="w-full pb-20 md:py-[120px]" use:whenInView={onTrackViewSection('Hero')}>
 	<div class="flex flex-col-reverse md:flex-row gap-8 items-center">
 		<div class="w-full md:w-[502px] shrink-0">
-			<img src="/iphones.webp" class="w-full h-auto" />
+			<img alt="3 iPhones of LoomLetter screenshots" src="/iphones.webp" class="w-full h-auto" />
 		</div>
 		<div class="flex-grow flex flex-col gap-5 justify-start">
 			<h1 class="text-4xl text-center md:text-left md:text-6xl -text-gradient font-bold">
@@ -124,7 +124,11 @@
 			</div>
 		</div>
 		<div class="w-3/5 md:w-[390px] shrink-0">
-			<img src="/ai-reading-screenshot.png" class="w-full h-auto" />
+			<img
+				alt="Screenshot of AI narration in LoomLetter"
+				src="/ai-reading-screenshot.png"
+				class="w-full h-auto"
+			/>
 		</div>
 	</div>
 </section>
@@ -143,7 +147,7 @@
 			</p>
 		</div>
 		<div class="w-full md:w-[700px] shrink-0">
-			<img src="notifications.png" class="w-full h-auto" />
+			<img alt="LoomLetter notifications" src="notifications.png" class="w-full h-auto" />
 		</div>
 	</div>
 </section>
@@ -161,8 +165,16 @@
 			</p>
 		</div>
 		<div class="w-full md:w-[1000px] shrink-0">
-			<img src="widgets.png" class="w-full h-auto md:block hidden" />
-			<img src="widgets-sm.png" class="w-full h-auto md:hidden block" />
+			<img
+				alt="Preview of small and medium widgets"
+				src="widgets.png"
+				class="w-full h-auto md:block hidden"
+			/>
+			<img
+				alt="Preview of small widget"
+				src="widgets-sm.png"
+				class="w-full h-auto md:hidden block"
+			/>
 		</div>
 	</div>
 </section>
@@ -183,7 +195,7 @@
 			>
 				{#each emailClients as client}
 					<div class="flex flex-col justify-center items-center">
-						<img src={client.img} class="w-[120px] mb-4" />
+						<img alt={`Email client ${client.title}`} src={client.img} class="w-[120px] mb-4" />
 
 						<p class="text-xl font-bold text-[#32F3AE] mb-2">{client.title}</p>
 						<p class="text-white">{client.descr}</p>

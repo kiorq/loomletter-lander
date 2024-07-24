@@ -76,7 +76,7 @@
 <section class="w-full pb-20 md:py-[120px]" use:whenInView={onTrackViewSection('Hero')}>
 	<div class="flex flex-col-reverse md:flex-row gap-8 items-center">
 		<div class="w-full md:w-[502px] shrink-0">
-			<img src="/iphones.png" class="w-full h-auto" />
+			<img src="/iphones.webp" class="w-full h-auto" />
 		</div>
 		<div class="flex-grow flex flex-col gap-5 justify-start">
 			<h1 class="text-4xl text-center md:text-left md:text-6xl -text-gradient font-bold">

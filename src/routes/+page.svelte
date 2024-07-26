@@ -78,7 +78,7 @@
 		<div class="w-full md:w-[502px] shrink-0">
 			<img alt="3 iPhones of LoomLetter screenshots" src="/iphones.webp" class="w-full h-auto" />
 		</div>
-		<div class="flex-grow flex flex-col gap-5 justify-start">
+		<div class="flex-grow flex flex-col gap-4 justify-start">
 			<h1 class="text-4xl text-center md:text-left md:text-6xl -text-gradient font-bold">
 				<!-- TODO: i like this one alot "What If You Never Missed a Newsletter Again?"" -->
 				Read Newsletters<br />in Half the Time
@@ -87,6 +87,8 @@
 			<p class="text-lg md:text-2xl text-white text-center md:text-left">
 				Tailored for Time-Strapped Professionals
 			</p>
+
+			<p class="md:text-lg text-white text-center md:text-left">Coming Soon to iOS</p>
 
 			<div
 				class="w-full flex flex-col md:justify-start md:items-start justify-center items-center gap-5 mt-3"

@@ -105,6 +105,8 @@
 			{/if}
 		</div>
 
+		<p class="text-white text-center w-full md:max-w-[700px] mx-auto">Only Available on iOS</p>
+
 		<div>
 			<p class="text-2xl font-medium text-center text-white/80 mb-3">Early Adopter Benefits</p>
 			<div class="flex flex-row flex-wrap gap-4 justify-center items-center md:px-10">

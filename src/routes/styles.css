@@ -33,6 +33,14 @@ body {
 
 }
 
+.-bg-text--on-hover-only:hover {
+    background: linear-gradient(to right, #32F3AE, #00E0FF);
+    color: transparent;
+    background-clip: text;
+
+}
+
+
 .-bg-simple-to-gradient:hover {
     background: linear-gradient(to right, #32F3AE, #00E0FF);
 }

@@ -56,7 +56,9 @@
 			players. Their daily newsletters keep you informed about major markets like New York, Los
 			Angeles, and Miami.
 			<br />
-			<a href="https://therealdeal.com/" target="_blank">Sign Up: The Real Deal Newsletter</a>
+			<a href="https://therealdeal.com/" target="_blank" class="underline -bg-text--on-hover-only"
+				>Sign Up: The Real Deal Newsletter</a
+			>
 		</p>
 
 		<h2 class="text-3xl mt-8 mb-4">HousingWire</h2>
@@ -65,7 +67,11 @@
 			real estate, and fintech industries. It provides daily updates on housing market trends,
 			policy changes, and economic factors that influence real estate.
 			<br />
-			<a href="https://www.housingwire.com/" target="_blank">Sign Up: HousingWire Newsletter</a>
+			<a
+				href="https://www.housingwire.com/"
+				target="_blank"
+				class="underline -bg-text--on-hover-only">Sign Up: HousingWire Newsletter</a
+			>
 		</p>
 
 		<h2 class="text-3xl mt-8 mb-4">Inman News</h2>
@@ -75,7 +81,9 @@
 			offer a mix of breaking news and in-depth reports on topics that matter most to agents and
 			brokers.
 			<br />
-			<a href="https://www.inman.com/" target="_blank">Sign Up: Inman News</a>
+			<a href="https://www.inman.com/" target="_blank" class="underline -bg-text--on-hover-only"
+				>Sign Up: Inman News</a
+			>
 		</p>
 
 		<h2 class="text-3xl mt-8 mb-4">Curbed</h2>
@@ -85,7 +93,11 @@
 			interested in the broader impact of real estate on cities and communities, Curbed’s newsletter
 			is a must-read.
 			<br />
-			<a href="https://www.curbed.com/newsletter" target="_blank">Sign Up: Curbed Newsletter</a>
+			<a
+				href="https://www.curbed.com/newsletter"
+				target="_blank"
+				class="underline -bg-text--on-hover-only">Sign Up: Curbed Newsletter</a
+			>
 		</p>
 
 		<h2 class="text-3xl mt-8 mb-4">National Real Estate Investor (NREI)</h2>
@@ -95,7 +107,11 @@
 			property sectors. Their newsletters are ideal for investors, property managers, and
 			developers.
 			<br />
-			<a href="https://www.nreionline.com/" target="_blank">Sign Up: NREI Newsletter</a>
+			<a
+				href="https://www.nreionline.com/"
+				target="_blank"
+				class="underline -bg-text--on-hover-only">Sign Up: NREI Newsletter</a
+			>
 		</p>
 
 		<h2 class="text-3xl mt-8 mb-4">Enhance Your Newsletter Experience with LoomLetter</h2>

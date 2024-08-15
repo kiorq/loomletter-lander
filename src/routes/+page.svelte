@@ -3,6 +3,7 @@
 	import WaitlistSection from '$lib/components/WaitlistSection.svelte';
 	import { track } from '$lib/track';
 	import Apple from '$lib/components/icons/Apple.svelte';
+	import ArticleItem from '$lib/components/ArticleItem.svelte';
 
 	const faq = [
 		{
@@ -215,6 +216,16 @@
 				</div>
 			{/each}
 		</div>
+	</div>
+</section>
+
+<section class="w-full pb-20" use:whenInView={onTrackViewSection('Articles')}>
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-5">
+		<ArticleItem
+			href="/article/how-modern-professionals-stay-ahead-of-the-competition"
+			title="How Modern Professionals Stay Ahead of the Competition: The Power of Newsletters"
+			descr="Professionals rely on newsletters to stay competitive across various industries."
+		/>
 	</div>
 </section>
 

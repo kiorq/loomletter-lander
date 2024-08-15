@@ -2,8 +2,14 @@
 	import { whenInView } from '$lib/lib';
 	import WaitlistSection from '$lib/components/WaitlistSection.svelte';
 	import { track } from '$lib/track';
+	import Apple from '$lib/components/icons/Apple.svelte';
 
 	const faq = [
+		{
+			question: 'How does this work?',
+			answer:
+				'We provide you with your own personal LoomLetter email address, which you can use to sign up for your favorite newsletters. All your newsletters will be delivered to LoomLetter, where they’ll be organized and made easily accessible with features like AI-powered narration and smart filters.'
+		},
 		{
 			question: 'What is the Early Adopter Program?',
 			answer:
@@ -15,34 +21,14 @@
 				'To join the Early Adopter Program, simply sign up on our waitlist. You’ll be one of the first to receive access and will be able to provide feedback directly to our development team.'
 		},
 		{
-			question: 'What are the benefits of joining the Early Adopter Program?',
+			question: 'What makes LoomLetter different from other newsletter readers?',
 			answer:
-				'As an early adopter, you’ll enjoy exclusive early access to LoomLetter, the opportunity to influence the app’s development, and special recognition within our community. Your insights and feedback will directly contribute to making LoomLetter better for everyone.'
-		},
-		{
-			question: 'How does LoomLetter protect my privacy?',
-			answer:
-				'Your data is processed securely on your device. We do not store your email contents on our servers, and only a secure, encrypted token is stored to maintain your account connection.'
-		},
-		{
-			question: 'Why does LoomLetter need access to my email?',
-			answer:
-				'LoomLetter fetches your newsletters to keep them organized in one place. This access is handled securely, and your email content is processed only on your device.'
+				'LoomLetter focuses on convenience for busy professionals with features like AI narration and easy access widgets, providing a seamless and efficient way to stay updated.'
 		},
 		{
 			question: 'What are the key features of LoomLetter?',
 			answer:
 				'LoomLetter offers AI-powered newsletter narration, home screen widgets for easy access, and smart filters to organize your newsletters. It’s designed to make staying informed convenient and efficient.'
-		},
-		{
-			question: 'How can I disconnect my email account from LoomLetter?',
-			answer:
-				'You can disconnect your email account in the app settings by tapping the Log Out button. This will stop all data synchronization and remove any saved data from the app and your token from our servers.'
-		},
-		{
-			question: 'What makes LoomLetter different from other newsletter readers?',
-			answer:
-				'LoomLetter focuses on convenience for busy professionals with features like AI narration and easy access widgets, providing a seamless and efficient way to stay updated.'
 		}
 	];
 
@@ -88,17 +74,42 @@
 				Tailored for Time-Strapped Professionals
 			</p>
 
-			<p class="md:text-lg text-white text-center md:text-left">Coming Soon to iOS</p>
-
 			<div
 				class="w-full flex flex-col md:justify-start md:items-start justify-center items-center gap-5 mt-3"
 			>
 				<a
 					on:click={onHeroCtaClick}
 					class="-cta-gradient w-fit bg-white/10 hover:bg-white/30 px-5 md:px-9 py-4 rounded-full font-bold transition-all"
-					href="#waitlist"><p class="text-black text-xl lg:text-2xl text-center">Try Now</p></a
+					href="https://testflight.apple.com/join/Jynt22qF"
+					target="_blank"
+					><p class="text-black text-xl lg:text-2xl text-center flex flex-row items-center gap-2">
+						<Apple /> <span>Try Now</span>
+					</p></a
 				>
 			</div>
+
+			<p class="md:text-lg text-white/70 text-center md:text-left">
+				Early Adopter Program Available for iOS only
+			</p>
+		</div>
+	</div>
+</section>
+
+<section class="w-full pb-20 md:pb-[200px]" use:whenInView={onTrackViewSection('PushN')}>
+	<div class="flex flex-col gap-10 md:gap-20 items-center">
+		<div class="flex-grow flex flex-col gap-8 justify-start">
+			<p class="text-3xl md:text-6xl -text-gradient font-bold text-center">
+				Never Miss a Newsletter Again
+			</p>
+
+			<p class="text-lg text-white text-center w-full md:max-w-[700px]">
+				Stay on top of your newsletters with real-time push notifications. Get instant alerts the
+				moment new content arrives, ensuring you never miss an update. Stay informed and connected,
+				effortlessly.
+			</p>
+		</div>
+		<div class="w-full md:w-[700px] shrink-0">
+			<img alt="LoomLetter notifications" src="notifications.png" class="w-full h-auto" />
 		</div>
 	</div>
 </section>
@@ -135,25 +146,6 @@
 	</div>
 </section>
 
-<section class="w-full pb-20 md:pb-[200px]" use:whenInView={onTrackViewSection('PushN')}>
-	<div class="flex flex-col gap-10 md:gap-20 items-center">
-		<div class="flex-grow flex flex-col gap-8 justify-start">
-			<p class="text-3xl md:text-6xl -text-gradient font-bold text-center">
-				Never Miss a Newsletter
-			</p>
-
-			<p class="text-lg text-white text-center w-full md:max-w-[700px]">
-				Stay on top of your newsletters with real-time push notifications. Get instant alerts the
-				moment new content arrives, ensuring you never miss an update. Stay informed and connected,
-				effortlessly.
-			</p>
-		</div>
-		<div class="w-full md:w-[700px] shrink-0">
-			<img alt="LoomLetter notifications" src="notifications.png" class="w-full h-auto" />
-		</div>
-	</div>
-</section>
-
 <section class="w-full pb-20 md:pb-[200px]" use:whenInView={onTrackViewSection('Widgets')}>
 	<div class="flex flex-col gap-10 md:gap-20 items-center">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
@@ -181,7 +173,7 @@
 	</div>
 </section>
 
-<section class="w-full pb-20 md:pb-[200px]" use:whenInView={onTrackViewSection('NoSignUp')}>
+<!-- <section class="w-full pb-20 md:pb-[200px]" use:whenInView={onTrackViewSection('NoSignUp')}>
 	<div class="flex flex-col gap-10 md:gap-20 items-center">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
 			<p class="text-3xl md:text-6xl -text-gradient font-bold text-center">No Sign-Up Needed</p>
@@ -206,7 +198,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 
 <WaitlistSection sectionName="WaitList1" />
 

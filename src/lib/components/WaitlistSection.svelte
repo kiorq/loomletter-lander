@@ -1,47 +1,16 @@
 <script lang="ts">
-	import { slide } from 'svelte/transition';
-	import Spinner from './Spinner.svelte';
 	import { whenInView } from '$lib/lib';
-	import { refererData, track } from '$lib/track';
-	import { goto } from '$app/navigation';
+	import { track } from '$lib/track';
+
+	import Apple from './icons/Apple.svelte';
 
 	export let sectionName: string;
 
 	let emailAddress = '';
 	let joining = false;
 
-	const onJoinWaitList = async (event: SubmitEvent) => {
-		event.preventDefault();
-		event.stopPropagation();
-		joining = true;
-
-		track('WaitListSubmit', {
-			...refererData()
-		});
-
-		try {
-			const response = await fetch('/join-waitlist', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify({ email_address: emailAddress })
-			});
-
-			if (!response.ok) {
-				track('WaitListFail', {
-					...refererData()
-				});
-				throw new Error(`HTTP error! status: ${response.status}`);
-			}
-
-			const data = await response.json();
-			if (data.ok) {
-				goto(`/thank-you${window.location.search || ''}`);
-			}
-		} finally {
-			joining = false;
-		}
+	const onTrackCtaClick = async (event: SubmitEvent) => {
+		track('CtaClick2');
 	};
 
 	const onTrackViewSection = (sectionName: string) => () => {
@@ -65,48 +34,22 @@
 				early access, provide feedback, and help shape the future of our app. Sign up now to secure
 				your spot and enjoy unique benefits designed just for our early users.
 			</p>
-
-			<p class="text-lg text-white text-center w-full md:max-w-[700px] mx-auto">
-				After entering your email address, we'll send you details on how to get started.
-			</p>
 		</div>
 
 		<div class="w-full md:w-[1000px] shrink-0 flex flex-col items-center justify-center">
-			{#if joining}
-				{#key 'joining-state'}
-					<div
-						class="bg-white/10 w-fit py-3 px-6 rounded-2xl flex flex-row gap-3 items-center"
-						transition:slide
-					>
-						<Spinner width={30} height={30} />
-						<p class="text-lg">Joining...</p>
-					</div>
-				{/key}
-			{:else}
-				{#key 'join-form'}
-					<form
-						class="flex flex-col md:flex-row justify-center items-center gap-6 bg-white/20 py-6 px-4 w-full md:w-fit md:py-12 md:px-20 rounded-3xl md:rounded-full"
-						transition:slide
-						on:submit={onJoinWaitList}
-					>
-						<input
-							type="#"
-							class="w-full md:w-[300px] border-[3px] border-[#00E0FF] outline-[#00E0FF] bg-white p-3 rounded-xl text-center text-black"
-							placeholder="Enter your Email Address"
-							bind:value={emailAddress}
-						/>
-
-						<button
-							class="-bg-gradient text-black px-7 py-3 rounded-3xl font-bold transition-all text-lg w-full md:w-fit"
-							><p class="">Join</p></button
-						>
-					</form>
-				{/key}
-			{/if}
+			<a
+				on:click={onTrackCtaClick}
+				class="-cta-gradient w-fit bg-white/10 hover:bg-white/30 px-5 md:px-12 py-4 rounded-full font-bold transition-all"
+				href="https://testflight.apple.com/join/Jynt22qF"
+				target="_blank"
+				><p class="text-black text-xl lg:text-2xl text-center flex flex-row items-center gap-2">
+					<Apple /> <span>Try Now</span>
+				</p></a
+			>
 		</div>
 
-		<p class="text-white text-center w-full md:max-w-[700px] mx-auto">
-			Early Adopter Program is only available on iOS
+		<p class="text-white/80 text-center w-full md:max-w-[700px] mx-auto">
+			Early Adopter Program Available for iOS only
 		</p>
 
 		<div>

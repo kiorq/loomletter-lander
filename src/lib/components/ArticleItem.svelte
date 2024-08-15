@@ -6,7 +6,7 @@
 
 <a
 	{href}
-	class="bg-white/5 px-6 py-4 rounded-3xl border border-[#32F3AE]/10 hover:bg-[#32F3AE] hover:text-black transition-all"
+	class="bg-white/5 px-6 py-4 rounded-3xl border border-[#32F3AE]/10 -bg-gradient--on-hover-only hover:border-black/50 hover:text-black transition-all"
 >
 	<p class="text-xl">
 		{title}

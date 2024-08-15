@@ -220,12 +220,22 @@
 </section>
 
 <section class="w-full pb-20" use:whenInView={onTrackViewSection('Articles')}>
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-5">
-		<ArticleItem
-			href="/article/how-modern-professionals-stay-ahead-of-the-competition"
-			title="How Modern Professionals Stay Ahead of the Competition: The Power of Newsletters"
-			descr="Professionals rely on newsletters to stay competitive across various industries."
-		/>
+	<div class="flex flex-col gap-20">
+		<div class="flex-grow flex flex-col gap-8 justify-start">
+			<p class="text-3xl text-white font-bold text-center">Articles</p>
+		</div>
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-5">
+			<ArticleItem
+				href="/article/how-modern-professionals-stay-ahead-of-the-competition"
+				title="How Modern Professionals Stay Ahead of the Competition: The Power of Newsletters"
+				descr="Professionals rely on newsletters to stay competitive across various industries."
+			/>
+			<ArticleItem
+				href="/article/top-5-newsletters-to-stay-ahead-in-real-estate"
+				title="Top 5 Newsletters to Stay Ahead in Real Estate"
+				descr="Discover the top 5 newsletters that real estate professionals rely on to stay informed and ahead in the industry."
+			/>
+		</div>
 	</div>
 </section>
 

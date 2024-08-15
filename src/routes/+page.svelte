@@ -60,6 +60,14 @@
 	};
 </script>
 
+<svelte:head>
+	<title>Newsletter Reader - LoomLetter</title>
+	<meta
+		name="description"
+		content="The newsletter reader tailored for time-strapped professionals. With LoomLetter's AI-powered newsletter narrator, effortlessly manage and listen to your favorite newsletters on the go. Stay on top of subscriptions with push notifications, quick access widgets, and more. Perfect for staying informed and productive."
+	/>
+</svelte:head>
+
 <section class="w-full pb-20 md:py-[120px]" use:whenInView={onTrackViewSection('Hero')}>
 	<div class="flex flex-col-reverse md:flex-row gap-8 items-center">
 		<div class="w-full md:w-[502px] shrink-0">

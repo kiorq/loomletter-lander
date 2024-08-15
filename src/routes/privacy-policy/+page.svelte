@@ -1,5 +1,9 @@
 <svelte:head>
-	<title>Privacy Policy (Newsletter Reader - LoomLetter)</title>
+	<title>Privacy Policy (LoomLetter)</title>
+	<meta
+		name="description"
+		content="The newsletter reader tailored for time-strapped professionals. With LoomLetter's AI-powered newsletter narrator, effortlessly manage and listen to your favorite newsletters on the go. Stay on top of subscriptions with push notifications, quick access widgets, and more. Perfect for staying informed and productive."
+	/>
 </svelte:head>
 
 <main class="flex flex-col gap-0 pb-32">

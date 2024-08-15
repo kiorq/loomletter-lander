@@ -25,11 +25,6 @@
 </script>
 
 <svelte:head>
-	<title>Newsletter Reader - LoomLetter</title>
-	<meta
-		name="description"
-		content="The newsletter reader tailored for time-strapped professionals. With LoomLetter's AI-powered newsletter narrator, effortlessly manage and listen to your favorite newsletters on the go. Stay on top of subscriptions with push notifications, quick access widgets, and more. Perfect for staying informed and productive."
-	/>
 	<link rel="icon" href="/logo.svg" />
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />

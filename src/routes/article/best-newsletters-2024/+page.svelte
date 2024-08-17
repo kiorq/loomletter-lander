@@ -6,6 +6,7 @@
 		description: string;
 		link: string;
 		bestFor: string;
+		imgSrc: string;
 	}
 
 	const currentYear: number = new Date().getFullYear();
@@ -16,27 +17,30 @@
 			description:
 				'A daily newsletter providing no-nonsense business news and entrepreneurial insights.',
 			link: 'https://thehustle.co',
-			bestFor: 'Entrepreneurs & Innovators'
+			bestFor: 'Entrepreneurs & Innovators',
+			imgSrc: ''
 		},
 		{
 			name: 'Morning Brew',
 			description: 'Your quick, witty morning rundown on the most important business news.',
 			link: 'https://www.morningbrew.com',
-			bestFor: 'Business Professionals'
+			bestFor: 'Business Professionals',
+			imgSrc: ''
 		},
 		{
 			name: 'Stratechery',
 			description: 'Insightful analysis of technology and media news by Ben Thompson.',
 			link: 'https://stratechery.com',
-			bestFor: 'Tech Enthusiasts & Strategists'
+			bestFor: 'Tech Enthusiasts & Strategists',
+			imgSrc: ''
 		},
 		{
 			name: 'The Daily Upside',
 			description: 'Financial news and trends delivered in an easy-to-digest format.',
 			link: 'https://www.thedailyupside.com',
-			bestFor: 'Investors & Financial Advisors'
+			bestFor: 'Investors & Financial Advisors',
+			imgSrc: ''
 		}
-		// Add more newsletters here
 	];
 </script>
 
@@ -168,12 +172,24 @@
 		<ul class="mt-8">
 			{#each newsletters as newsletter}
 				<li class="mb-4">
-					<h3 class="text-xl font-semibold">{newsletter.name}</h3>
-					<p>{newsletter.description}</p>
-					<p class="text-sm italic">Best for: {newsletter.bestFor}</p>
-					<a href={newsletter.link} target="_blank" class="text-blue-500 underline"
-						>Subscribe here</a
-					>
+					<div class="w-full flex flex-row gap-1.5 md:gap-4">
+						<div class="h-full w-24 aspect-square bg-gray-300 rounded-lg overflow-hidden">
+							<img
+								src={newsletter.imgSrc}
+								class="w-full h-full object-fill"
+								alt={newsletter.name + ' Logo'}
+							/>
+						</div>
+
+						<div class="grow">
+							<h3 class="text-xl font-semibold">{newsletter.name}</h3>
+							<p>{newsletter.description}</p>
+							<p class="text-sm italic">Best for: {newsletter.bestFor}</p>
+							<a href={newsletter.link} target="_blank" class="text-blue-500 underline"
+								>Subscribe here</a
+							>
+						</div>
+					</div>
 				</li>
 			{/each}
 		</ul>

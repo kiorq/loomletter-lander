@@ -11,6 +11,10 @@
 
 	const currentYear: number = new Date().getFullYear();
 
+	const logoByUrl = (domain: string) => {
+		return `https://img.logo.dev/${domain}?token=pk_Qf4aJKwSTiC2i8muPCdvKg`;
+	};
+
 	const newsletters: Newsletter[] = [
 		{
 			name: 'The Hustle',
@@ -18,28 +22,28 @@
 				'A daily newsletter providing no-nonsense business news and entrepreneurial insights.',
 			link: 'https://thehustle.co',
 			bestFor: 'Entrepreneurs & Innovators',
-			imgSrc: ''
+			imgSrc: logoByUrl('thehustle.co')
 		},
 		{
 			name: 'Morning Brew',
 			description: 'Your quick, witty morning rundown on the most important business news.',
 			link: 'https://www.morningbrew.com',
 			bestFor: 'Business Professionals',
-			imgSrc: ''
+			imgSrc: logoByUrl('morningbrew.com')
 		},
 		{
 			name: 'Stratechery',
 			description: 'Insightful analysis of technology and media news by Ben Thompson.',
 			link: 'https://stratechery.com',
 			bestFor: 'Tech Enthusiasts & Strategists',
-			imgSrc: ''
+			imgSrc: logoByUrl('stratechery.com')
 		},
 		{
 			name: 'The Daily Upside',
 			description: 'Financial news and trends delivered in an easy-to-digest format.',
 			link: 'https://www.thedailyupside.com',
 			bestFor: 'Investors & Financial Advisors',
-			imgSrc: ''
+			imgSrc: logoByUrl('thedailyupside.com')
 		}
 	];
 </script>
@@ -62,7 +66,7 @@
 	<!-- Meta Keywords -->
 	<meta
 		name="keywords"
-		content="best newsletters {currentYear}, newsletters to subscribe to, best newsletters to read, newsletters to subscribe on Substack, LoomLetter"
+		content="best newsletters {currentYear}, newsletters to subscribe to, best newsletters to read, newsletters to subscribe on Substack, LoomLetter, daily routine, beehivv, substack, newsletter ai"
 	/>
 
 	<!-- Meta Robots -->
@@ -173,7 +177,7 @@
 			{#each newsletters as newsletter}
 				<li class="mb-4">
 					<div class="w-full flex flex-row gap-1.5 md:gap-4">
-						<div class="h-full w-24 aspect-square bg-gray-300 rounded-lg overflow-hidden">
+						<div class="h-full w-24 aspect-square bg-gray-300 rounded-lg overflow-hidden border">
 							<img
 								src={newsletter.imgSrc}
 								class="w-full h-full object-fill"
@@ -199,26 +203,26 @@
 			As you subscribe to more newsletters, managing them can become overwhelming. <strong
 				>LoomLetter</strong
 			> is here to help. With LoomLetter, you can effortlessly manage multiple subscriptions, keep your
-			inbox clutter-free, and focus on what truly matters. Whether you’re subscribing to newsletters
-			on Substack or other platforms, LoomLetter’s advanced features—like real-time notifications and
-			AI-powered narration—make staying informed easier than ever.
+			already intense inbox clutter-free, and focus on what truly matters. Whether you’re subscribing
+			to newsletters on Substack, Beehivv or other platforms, LoomLetter’s advanced features—like real-time
+			notifications and AI-powered narration—make staying informed easier than ever.
 		</p>
 
-		<h2 class="text-3xl mt-8 mb-4">How to Leverage Newsletters for Professional Growth</h2>
+		<h2 class="text-3xl mt-8 mb-4">How Newsletters can help you</h2>
 		<p class="leading-8 font-light">
-			To maximize the benefits of newsletters, it’s crucial to align your subscriptions with your
-			career goals. Start by identifying the newsletters that offer the most value in your field,
-			then use <strong>LoomLetter</strong> to prioritize this content and integrate it into your daily
-			routine. Whether you’re reading during your morning coffee or listening on your commute, these
-			newsletters will provide the insights needed to stay ahead.
+			To maximize the benefits of newsletters, it’s crucial subscribe to newsletters that deliver
+			expert opinion about your industry. Start by identifying the newsletters that offer the most
+			value in your field, Using <strong>LoomLetter</strong> can help you find such newsletters and LoomLetter
+			will integrate them into your daily routine. Whether you’re reading during your morning coffee
+			or listening on your commute, these newsletters will provide the insights needed to stay ahead.
 		</p>
 
 		<h2 class="text-3xl mt-8 mb-4">Conclusion</h2>
 		<p class="leading-8 font-light">
 			Don’t let information overload hold you back. By subscribing to the right newsletters and
-			managing them effectively with <strong>LoomLetter</strong>, you can stay informed, make better
-			decisions, and set yourself apart as a leader in your field. The competitive edge you gain
-			today will shape your success tomorrow.
+			incomporating them into your daily routine with <strong>LoomLetter</strong>, you can stay
+			informed, make better decisions, and set yourself apart as a leader in your field. The
+			competitive edge you gain today will shape your success tomorrow.
 		</p>
 
 		<div class="w-full flex flex-col justify-center items-center gap-5 mt-12">

@@ -366,6 +366,10 @@
 			essential. Here are some top picks for {currentYear} that will keep you ahead of the curve:
 		</p>
 
+		<p class="text-sm text-gray-600">
+			This list was last updated on 16 Aug 2024 to ensure you have the most current recommendations.
+		</p>
+
 		<ul class="mt-8">
 			{#each newsletters as newsletter}
 				<li class="mb-4">

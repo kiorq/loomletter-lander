@@ -105,7 +105,7 @@
 	</h1>
 
 	<div class="text-left leading-relaxed text-lg">
-		<h2 class="text-3xl mb-4">The Problem: Information Overload</h2>
+		<h2 class="text-3xl mb-4">Information Overload</h2>
 		<p class="leading-8 font-light">
 			In today’s hyper-connected world, the sheer volume of information available can be
 			overwhelming. As a professional striving to excel in your field, you know that staying
@@ -115,7 +115,7 @@
 			need to stay informed but not having a clear path to do so efficiently.
 		</p>
 
-		<h2 class="text-3xl mt-8 mb-4">The Agitation: The Consequences of Missing Out</h2>
+		<h2 class="text-3xl mt-8 mb-4">The Consequences of Missing Out</h2>
 		<p class="leading-8 font-light">
 			Now, think about the potential impact of missing out on key industry insights. Imagine if a
 			competitor capitalized on a market trend that you overlooked simply because you were buried
@@ -125,9 +125,7 @@
 			opportunities, delayed decisions, and ultimately, a stagnation in your professional growth.
 		</p>
 
-		<h2 class="text-3xl mt-8 mb-4">
-			The Solution: Curated Newsletters for the Modern Professional
-		</h2>
+		<h2 class="text-3xl mt-8 mb-4">Newsletters writtened by Industry Experts</h2>
 		<p class="leading-8 font-light">
 			This is where curated newsletters come into play. Unlike the overwhelming flood of general
 			information, newsletters are designed to deliver only the most relevant content straight to

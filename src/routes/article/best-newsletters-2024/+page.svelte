@@ -104,7 +104,6 @@
 		}
 	</style>
 </svelte:head>
-
 <div class="w-full max-w-4xl mx-auto">
 	<h1
 		class="text-3xl leading-10 md:text-5xl md:leading-[3.5rem] -text-gradient font-semibold mt-5 mb-12"
@@ -133,22 +132,22 @@
 			opportunities, delayed decisions, and ultimately, a stagnation in your professional growth.
 		</p>
 
-		<h2 class="text-3xl mt-8 mb-4">Newsletters writtened by Industry Experts</h2>
+		<h2 class="text-3xl mt-8 mb-4">Newsletters Written by Industry Experts</h2>
 		<p class="leading-8 font-light">
 			This is where curated newsletters come into play. Unlike the overwhelming flood of general
 			information, newsletters are designed to deliver only the most relevant content straight to
 			your inbox. The right newsletters don’t just keep you updated—they empower you with the
 			insights needed to make informed decisions and stay ahead of the competition. However,
-			managing multiple subscriptions can be challenging, and that’s where <strong
-				>LoomLetter</strong
-			> comes in.
+			managing multiple subscriptions can be challenging, and that’s where
+			<a href="/" class="text-blue-500 underline font-semibold">LoomLetter</a>
+			comes in.
 		</p>
 		<p class="leading-8 font-light">
-			<strong>LoomLetter</strong> is more than just an app—it’s your personal assistant for managing
-			information overload. It helps you organize and prioritize the newsletters that matter most to
-			you, ensuring you never miss a beat. With LoomLetter, you can subscribe to the best newsletters
-			on platforms like Substack, filter out the noise, and focus on content that drives your professional
-			growth.
+			<a href="/" class="text-blue-500 underline font-semibold">LoomLetter</a> is more than just an app—it’s
+			your personal assistant for managing information overload. It not only centralizes your subscriptions
+			but also tailors your experience, so each update feels like it was handpicked just for you. With
+			its seamless integration into your workflow, managing and acting on your most crucial newsletters
+			has never been easier.
 		</p>
 
 		<h2 class="text-3xl mt-8 mb-4">Why Subscribe to Newsletters in {currentYear}?</h2>
@@ -162,9 +161,11 @@
 		<p class="leading-8 font-light">
 			But subscribing is only the first step. The real challenge is managing your subscriptions
 			effectively, ensuring that you’re not just reading, but also applying the information you
-			receive. That’s why using a tool like <strong>LoomLetter</strong> is so powerful. It centralizes
-			all your newsletters, filters out irrelevant content, and provides you with the most important
-			updates when you need them.
+			receive. That’s why using a tool like <a
+				href="/"
+				class="text-blue-500 underline font-semibold">LoomLetter</a
+			> is so powerful. It centralizes all your newsletters, filters out irrelevant content, and provides
+			you with the most important updates when you need them.
 		</p>
 
 		<h2 class="text-3xl mt-8 mb-4">Top Newsletters to Subscribe to in {currentYear}</h2>
@@ -204,25 +205,30 @@
 				>LoomLetter</strong
 			> is here to help. With LoomLetter, you can effortlessly manage multiple subscriptions, keep your
 			already intense inbox clutter-free, and focus on what truly matters. Whether you’re subscribing
-			to newsletters on Substack, Beehivv or other platforms, LoomLetter’s advanced features—like real-time
+			to newsletters on Substack, Beehivv, or other platforms, LoomLetter’s advanced features—like real-time
 			notifications and AI-powered narration—make staying informed easier than ever.
 		</p>
-
-		<h2 class="text-3xl mt-8 mb-4">How Newsletters can help you</h2>
 		<p class="leading-8 font-light">
-			To maximize the benefits of newsletters, it’s crucial subscribe to newsletters that deliver
-			expert opinion about your industry. Start by identifying the newsletters that offer the most
-			value in your field, Using <strong>LoomLetter</strong> can help you find such newsletters and LoomLetter
-			will integrate them into your daily routine. Whether you’re reading during your morning coffee
-			or listening on your commute, these newsletters will provide the insights needed to stay ahead.
+			Using <strong>LoomLetter</strong> is more than just about staying informed—it's about enjoying
+			the process. With LoomLetter, you’ll feel the satisfaction of a well-organized inbox and the confidence
+			that comes from always being ahead in your industry.
+		</p>
+
+		<h2 class="text-3xl mt-8 mb-4">How Newsletters Can Help You</h2>
+		<p class="leading-8 font-light">
+			To maximize the benefits of newsletters, it’s crucial to subscribe to those that deliver
+			expert opinions about your industry. Start by identifying the newsletters that offer the most
+			value in your field. Using <strong>LoomLetter</strong> can help you find such newsletters and integrate
+			them seamlessly into your daily routine. Whether you’re reading during your morning coffee or listening
+			on your commute, these newsletters will provide the insights needed to stay ahead.
 		</p>
 
 		<h2 class="text-3xl mt-8 mb-4">Conclusion</h2>
 		<p class="leading-8 font-light">
 			Don’t let information overload hold you back. By subscribing to the right newsletters and
-			incomporating them into your daily routine with <strong>LoomLetter</strong>, you can stay
-			informed, make better decisions, and set yourself apart as a leader in your field. The
-			competitive edge you gain today will shape your success tomorrow.
+			incorporating them into your daily routine with <strong>LoomLetter</strong>, you can stay
+			informed, make better decisions, and feel confident in your leadership role. The competitive
+			edge you gain today will shape your success tomorrow.
 		</p>
 
 		<div class="w-full flex flex-col justify-center items-center gap-5 mt-12">
@@ -232,7 +238,7 @@
 				target="_blank"
 			>
 				<p class="text-black text-xl text-center flex flex-row items-center gap-2">
-					<Apple /> <span>Try LoomLetter Now</span>
+					<Apple /> <span>Experience the Ease of LoomLetter Today</span>
 				</p>
 			</a>
 			<p class="opacity-80 text-center">Newsletter Reader for the Modern Professional</p>

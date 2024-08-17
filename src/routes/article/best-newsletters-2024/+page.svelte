@@ -497,7 +497,7 @@
 		<p class="leading-8 font-light">
 			Don't let information overload hold you back. By subscribing to the right newsletters and
 			incorporating them into your daily routine with <strong>LoomLetter</strong>, you can stay
-			informed, make better decisions, and feel confident in your leadership role. he information
+			informed, make better decisions, and feel confident in your leadership role. The information
 			you stay on top of today can make all the difference in your success tomorrow.
 		</p>
 

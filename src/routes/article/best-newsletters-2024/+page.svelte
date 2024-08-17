@@ -139,15 +139,14 @@
 			your inbox. The right newsletters don’t just keep you updated—they empower you with the
 			insights needed to make informed decisions and stay ahead of the competition. However,
 			managing multiple subscriptions can be challenging, and that’s where
-			<a href="/" class="text-blue-500 underline font-semibold">LoomLetter</a>
-			comes in.
+			<a href="/" class="underline">LoomLetter</a>
+			> comes in.
 		</p>
 		<p class="leading-8 font-light">
-			<a href="/" class="text-blue-500 underline font-semibold">LoomLetter</a> is more than just an app—it’s
-			your personal assistant for managing information overload. It not only centralizes your subscriptions
-			but also tailors your experience, so each update feels like it was handpicked just for you. With
-			its seamless integration into your workflow, managing and acting on your most crucial newsletters
-			has never been easier.
+			<strong>LoomLetter</strong> is more than just an app—it’s your personal assistant for managing
+			information overload. It not only centralizes your subscriptions but also tailors your experience,
+			so each update feels like it was handpicked just for you. With its seamless integration into your
+			workflow, managing and acting on your most crucial newsletters has never been easier.
 		</p>
 
 		<h2 class="text-3xl mt-8 mb-4">Why Subscribe to Newsletters in {currentYear}?</h2>
@@ -161,11 +160,9 @@
 		<p class="leading-8 font-light">
 			But subscribing is only the first step. The real challenge is managing your subscriptions
 			effectively, ensuring that you’re not just reading, but also applying the information you
-			receive. That’s why using a tool like <a
-				href="/"
-				class="text-blue-500 underline font-semibold">LoomLetter</a
-			> is so powerful. It centralizes all your newsletters, filters out irrelevant content, and provides
-			you with the most important updates when you need them.
+			receive. That’s why using a tool like <strong>LoomLetter</strong> is so powerful. It centralizes
+			all your newsletters, filters out irrelevant content, and provides you with the most important
+			updates when you need them.
 		</p>
 
 		<h2 class="text-3xl mt-8 mb-4">Top Newsletters to Subscribe to in {currentYear}</h2>

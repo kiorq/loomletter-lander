@@ -141,17 +141,12 @@
 		<a href="/">
 			<div class="flex flex-row gap-5 items-center">
 				<img src="/logo.svg" alt="LoomLetter Icon" width="40" height="40" />
-				<p class="text-3xl font-medium text-white hidden md:block">LoomLetter</p>
+				<p class="text-3xl font-medium hidden md:block">LoomLetter</p>
 			</div>
 		</a>
 		<div class="flex flex-row justify-end gap-4">
-			<a href="/press" class="py-2.5 px-6 hover:bg-white/10 text-white rounded-3xl transition-all"
-				>Press</a
-			>
-			<a
-				href="/privacy-policy"
-				class="py-2.5 px-6 hover:bg-white/10 text-white rounded-3xl transition-all"
-			>
+			<a href="/press" class="py-2.5 px-6 hover:bg-white/10 rounded-3xl transition-all">Press</a>
+			<a href="/privacy-policy" class="py-2.5 px-6 hover:bg-white/10 rounded-3xl transition-all">
 				Privacy Policy
 			</a>
 		</div>

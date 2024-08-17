@@ -238,16 +238,11 @@
 				title="How Modern Professionals Stay Ahead of the Competition: The Power of Newsletters"
 				descr="Professionals rely on newsletters to stay competitive across various industries."
 			/>
-			<!-- <ArticleItem
-				href="/article/top-5-newsletters-to-stay-ahead-in-business"
-				title="Top 5 Newsletters to Stay Ahead in Business"
-				descr="Explore five essential business newsletters that keep professionals ahead with the latest trends and insights."
-			/>
 			<ArticleItem
-				href="/article/top-5-newsletters-to-stay-ahead-in-real-estate"
-				title="Top 5 Newsletters to Stay Ahead in Real Estate"
-				descr="Discover the top 5 newsletters that real estate professionals rely on to stay informed and ahead in the industry."
-			/> -->
+				href="/article/best-newsletters-2024"
+				title="Best Newsletter 2024"
+				descr="These newsletters will make sure you don't fall behind in your industry"
+			/>
 		</div>
 	</div>
 </section>

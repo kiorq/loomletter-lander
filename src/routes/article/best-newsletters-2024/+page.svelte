@@ -81,13 +81,6 @@
 			imgSrc: logoByUrl('heated.world')
 		},
 		{
-			name: 'InVision',
-			description: 'Rich in design and UX content, with practical tips and high-quality visuals.',
-			link: 'https://www.invisionapp.com/inside-design/newsletter',
-			bestFor: 'Design & UX',
-			imgSrc: logoByUrl('invisionapp.com')
-		},
-		{
 			name: 'Well+Good',
 			description: 'Offers a blend of health tips, wellness trends, and fitness guides.',
 			link: 'https://www.wellandgood.com/',
@@ -124,14 +117,7 @@
 			bestFor: 'Tech & Business Analysis',
 			imgSrc: logoByUrl('profgalloway.com')
 		},
-		{
-			name: 'The Profile',
-			description:
-				'Profiles of the world’s most successful people in business, entertainment, and tech.',
-			link: 'https://www.theprofile.substack.com/',
-			bestFor: 'Biographical Insights',
-			imgSrc: logoByUrl('substack.com')
-		},
+
 		{
 			name: 'The Ann Friedman Weekly',
 			description: 'A mix of insightful commentary on culture, politics, and gender.',
@@ -150,7 +136,7 @@
 		{
 			name: 'The Verge’s Command Line',
 			description: 'Focuses on the intersection of technology, policy, and power.',
-			link: 'https://www.theverge.com/command-line',
+			link: 'https://www.theverge.com/command-line-newsletter',
 			bestFor: 'Tech Policy',
 			imgSrc: logoByUrl('theverge.com')
 		},
@@ -164,7 +150,7 @@
 		{
 			name: 'Hacker Newsletter',
 			description: 'Weekly newsletter featuring the top tech news from Hacker News.',
-			link: 'http://www.hackernewsletter.com/',
+			link: 'https://hackernewsletter.com/',
 			bestFor: 'Developers & Tech Enthusiasts',
 			imgSrc: logoByUrl('hackernewsletter.com')
 		},
@@ -188,7 +174,7 @@
 			description: 'Offers deep dives into the intersection of finance, tech, and the economy.',
 			link: 'https://diff.substack.com/',
 			bestFor: 'Finance & Tech',
-			imgSrc: logoByUrl('substack.com')
+			imgSrc: substackLogo('https://diff.substack.com')
 		},
 		{
 			name: 'The Gist',

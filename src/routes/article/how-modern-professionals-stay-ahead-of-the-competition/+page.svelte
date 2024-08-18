@@ -1,5 +1,11 @@
 <script>
 	import Apple from '$lib/components/icons/Apple.svelte';
+	import { track } from '$lib/track';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		track('article-modern-prof');
+	});
 </script>
 
 <svelte:head>

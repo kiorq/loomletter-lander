@@ -1,5 +1,7 @@
 <script lang="ts">
 	import Apple from '$lib/components/icons/Apple.svelte';
+	import { track } from '$lib/track';
+	import { onMount } from 'svelte';
 
 	interface Newsletter {
 		name: string;
@@ -234,6 +236,10 @@
 			imgSrc: substackLogo('https://themarginalian.org')
 		}
 	];
+
+	onMount(() => {
+		track('article-best-newsletters');
+	});
 </script>
 
 <svelte:head>

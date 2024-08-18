@@ -182,6 +182,14 @@
 			link: 'https://www.thegistsports.com/',
 			bestFor: 'Sports Enthusiasts',
 			imgSrc: logoByUrl('thegistsports.com')
+		},
+		{
+			name: 'Dawn Digest',
+			description:
+				'Your quick, witty morning rundown on the most important business news in the UK & EU.',
+			link: 'https://www.dawndigest.com/',
+			bestFor: 'Business Professionals in the UK & EU',
+			imgSrc: logoByUrl('dawndigest.com')
 		}
 	];
 

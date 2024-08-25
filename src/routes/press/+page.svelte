@@ -146,6 +146,15 @@
 			>
 				<img src="/press/ad-1.png" />
 			</a>
+
+			<a
+				href="/press/ad-2.png"
+				download="loomletter-ad-copy-1.png"
+				class="downloadable-asset"
+				on:click={onTrackDownload('Ad2')}
+			>
+				<img src="/press/ad-2.png" />
+			</a>
 		</div>
 	</section>
 

@@ -138,6 +138,16 @@
 		<h2 class="text-2xl font-semibold mb-4">Promo Poster</h2>
 
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+			<div class="col-span-2">
+				<a
+					href="/press/screenshots-grouped.png"
+					download="screenshots-grouped.png"
+					class="downloadable-asset"
+					on:click={onTrackDownload('ScreenshotsGroups')}
+				>
+					<img src="/press/screenshots-grouped.png" />
+				</a>
+			</div>
 			<a
 				href="/press/ad-1.png"
 				download="loomletter-ad-copy-1.png"

@@ -17,11 +17,6 @@
 				'The Early Adopter Program allows you to be among the first to experience LoomLetter. By joining, you get exclusive early access to new features and updates, and your feedback will help shape the future of the app.'
 		},
 		{
-			question: 'How do I join the Early Adopter Program?',
-			answer:
-				'To join the Early Adopter Program, simply sign up on our waitlist. You’ll be one of the first to receive access and will be able to provide feedback directly to our development team.'
-		},
-		{
 			question: 'What makes LoomLetter different from other newsletter readers?',
 			answer:
 				'LoomLetter focuses on convenience for busy professionals with features like AI narration and easy access widgets, providing a seamless and efficient way to stay updated.'

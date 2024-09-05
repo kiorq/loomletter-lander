@@ -177,7 +177,7 @@
 	</div>
 </section>
 
-<section class="w-full pb-20 md:pb-[200px]" use:whenInView={onTrackViewSection('AIRead')}>
+<section class="w-full pb-20 md:pb-[200px]" use:whenInView={onTrackViewSection('Transform')}>
 	<div class="flex flex-col-reverse md:flex-row gap-0 items-center">
 		<div class="w-3/5 md:w-[390px] shrink-0">
 			<img alt="Video of using readability features" src="/readability.gif" class="w-full h-auto" />

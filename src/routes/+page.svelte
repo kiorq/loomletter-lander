@@ -59,7 +59,7 @@
 	<title>Newsletter Reader - LoomLetter</title>
 	<meta
 		name="description"
-		content="The newsletter reader tailored for time-strapped professionals. With LoomLetter's AI-powered newsletter narrator, effortlessly manage and listen to your favorite newsletters on the go. Stay on top of subscriptions with push notifications, quick access widgets, and more. Perfect for staying informed and productive."
+		content="Never miss a newsletter again with LoomLetter. Personalize how you read, listen, and manage your newsletters with customizable fonts, colors, and backgrounds. Join 100+ early adopters and transform your inbox today!"
 	/>
 </svelte:head>
 

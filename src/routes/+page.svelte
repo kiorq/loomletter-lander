@@ -71,7 +71,7 @@
 		<div class="flex-grow flex flex-col gap-4 justify-start">
 			<h1 class="text-4xl text-center md:text-left md:text-6xl -text-gradient font-bold">
 				<!-- TODO: i like this one alot "What If You Never Missed a Newsletter Again?"" -->
-				Read Newsletters<br />in Half the Time
+				Never Miss a Newsletter Again
 			</h1>
 
 			<p class="text-lg md:text-2xl text-white text-center md:text-left">

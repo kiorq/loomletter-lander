@@ -271,3 +271,37 @@
 </section>
 
 <WaitlistSection sectionName="WaitList2" />
+
+<section class="w-full pb-20" use:whenInView={onTrackViewSection('Faq')}>
+	<div class="flex flex-col gap-12">
+		<div class="flex-grow flex flex-col gap-8 justify-start">
+			<p class="text-3xl text-white font-bold text-center">See What We’re Building</p>
+
+			<p class="text-lg text-white text-center">
+				We’re listening to our users to build something you’ll love.
+			</p>
+		</div>
+		<div class="flex flex-row gap-5 items-center justify-center">
+			<a
+				href="https://loomletter.canny.io/changelog"
+				target="_blank"
+				class="bg-white/10 rounded-full text-xl py-4 px-10 hover:bg-[#32F3AE] hover:text-black transition-all"
+				>📋 Changelog</a
+			>
+
+			<a
+				href="https://loomletter.canny.io"
+				target="_blank"
+				class="bg-white/10 rounded-full text-xl py-4 px-10 hover:bg-[#32F3AE] hover:text-black transition-all"
+				>🗺️ Roadmap</a
+			>
+
+			<a
+				href="https://loomletter.canny.io/feature-requests"
+				target="_blank"
+				class="bg-white/10 rounded-full text-xl py-4 px-10 hover:bg-[#32F3AE] hover:text-black transition-all"
+				>💡 Leave Feedback</a
+			>
+		</div>
+	</div>
+</section>

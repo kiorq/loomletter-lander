@@ -56,7 +56,7 @@
 </script>
 
 <svelte:head>
-	<title>Newsletter Reader - LoomLetter</title>
+	<title>LoomLetter - Never miss a newsletter again</title>
 	<meta
 		name="description"
 		content="Never miss a newsletter again with LoomLetter. Personalize how you read, listen, and manage your newsletters with customizable fonts, colors, and backgrounds. Join 100+ early adopters and transform your inbox today!"

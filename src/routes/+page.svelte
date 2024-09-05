@@ -188,7 +188,7 @@
 				class="flex flex-col gap-8 bg-white/10 backdrop-blur-lg py-10 px-4 md:p-20 rounded-3xl md:rounded-[100px] justify-center items-center"
 			>
 				<p class="text-3xl md:text-6xl -text-gradient font-bold text-center">
-					Personalize How You Read Newsletters
+					Transform How You Read Newsletters
 				</p>
 
 				<p class="text-lg text-white text-center">

@@ -26,13 +26,14 @@
 	<div class="flex flex-col gap-10 md:gap-10 items-center">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
 			<p class="text-5xl md:text-7xl -text-gradient font-bold text-center">
-				Join the Early Adopter Program
+				Join 100+ Early Adopters
 			</p>
 
 			<p class="text-lg text-white text-center w-full md:max-w-[700px] mx-auto">
-				Be among the first to experience LoomLetter! Join our Early Adopter Program to get exclusive
-				early access, provide feedback, and help shape the future of our app. Sign up now to secure
-				your spot and enjoy unique benefits designed just for our early users.
+				Be among the first to experience LoomLetter alongside our growing community. Join our Early
+				Adopter Program to get exclusive early access, provide feedback, and help shape the future
+				of our app. Sign up now to secure your spot and enjoy unique benefits designed just for our
+				early users.
 			</p>
 		</div>
 
@@ -53,13 +54,13 @@
 		</p>
 
 		<div>
-			<p class="text-2xl font-medium text-center text-white/80 mb-3">Early Adopter Benefits</p>
+			<!-- <p class="text-2xl font-medium text-center text-white/80 mb-3">Early Adopter Benefits</p> -->
 			<div class="flex flex-row flex-wrap gap-4 justify-center items-center md:px-10">
 				<div class="bg-white/10 rounded-full py-2 px-5">🚀 Exclusive Early Access</div>
 				<div class="bg-white/10 rounded-full py-2 px-5">🛠️ Priority Feature Requests</div>
 				<div class="bg-white/10 rounded-full py-2 px-5">💬 Direct Feedback Loop</div>
 				<div class="bg-white/10 rounded-full py-2 px-5">🔒 Free Lifetime Subscription</div>
-				<div class="bg-white/10 rounded-full py-2 px-5">👑 Special Recognition</div>
+				<div class="bg-white/10 rounded-full py-2 px-5">👑 Early User Perks</div>
 			</div>
 		</div>
 	</div>

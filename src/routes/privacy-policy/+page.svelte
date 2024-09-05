@@ -31,26 +31,42 @@
 
 	<section class="mb-8">
 		<h2 class="text-2xl font-semibold mb-4">Types of Data Collected</h2>
-		<h3 class="text-lg font-medium mb-2">Refresh Token</h3>
+		<h3 class="text-lg font-medium mb-2">Email Address</h3>
 		<p class="text-white/80">
-			We store a refresh token that is used to fetch a new token when your device requests it. This
-			token allows us to maintain your account connection securely.
+			Each user is assigned a custom LoomLetter email address (e.g., example@read.loomletter.app).
+			We store every newsletter sent to this email address for you to access and read through our
+			app.
 		</p>
 
 		<h3 class="text-lg font-medium mt-4 mb-2">Push Token</h3>
 		<p class="text-white/80">
-			We store a push token that is used to send background push notifications to your device. These
-			notifications trigger the device to perform a background sync, accessing your inbox and
-			filtering out emails to discover newsletters.
+			We store a push token that is used to send push notifications to your device. These
+			notifications alert you when new newsletters are available for you to read.
 		</p>
 	</section>
 
 	<section class="mb-8">
 		<h2 class="text-2xl font-semibold mb-4">Data Processing</h2>
 		<p class="text-white/80">
-			All processing and accessing of your inbox is done securely on your device. LoomLetter does
-			not have the ability to view or access your email content. Your personal information remains
-			private and protected on your device.
+			Newsletters sent to your custom LoomLetter email address are securely stored, and you can
+			access them through the app. We generate an audio version of each newsletter for personal use
+			only, which enhances your reading experience. This audio is stored temporarily within the app
+			and cannot be downloaded for external use.
+		</p>
+		<p class="text-white/80">
+			All newsletters can be accessed in various formats, including enhanced readability modes,
+			which are intended solely for personal use.
+		</p>
+	</section>
+
+	<section class="mb-8">
+		<h2 class="text-2xl font-semibold mb-4">Legal Use of Audio and Readability Formats</h2>
+		<p class="text-white/80">
+			We provide text-to-speech (TTS) and enhanced readability formats to help users interact with
+			their newsletters more easily. These features are for personal use only, and any
+			redistribution, sharing, or external use of the generated audio or modified newsletter formats
+			is not allowed. This ensures that we comply with copyright and content ownership laws, similar
+			to services like Speechify.
 		</p>
 	</section>
 

@@ -24,7 +24,7 @@
 		{
 			question: 'What are the key features of LoomLetter?',
 			answer:
-				'LoomLetter offers AI-powered newsletter narration, home screen widgets for easy access, and smart filters to organize your newsletters. It’s designed to make staying informed convenient and efficient.'
+				'LoomLetter offers AI-powered newsletter narration, readability formats and home screen widgets for easy access to readings newsletter. It’s designed to make staying informed convenient and efficient.'
 		}
 	];
 
@@ -75,7 +75,7 @@
 			</h1>
 
 			<p class="text-lg md:text-2xl text-white text-center md:text-left">
-				Tailored for Time-Strapped Professionals
+				Join 100+ Early Adopters
 			</p>
 
 			<div
@@ -173,6 +173,34 @@
 				src="widgets-sm.png"
 				class="w-full h-auto md:hidden block"
 			/>
+		</div>
+	</div>
+</section>
+
+<section class="w-full pb-20 md:pb-[200px]" use:whenInView={onTrackViewSection('AIRead')}>
+	<div class="flex flex-col-reverse md:flex-row gap-0 items-center">
+		<div class="w-3/5 md:w-[390px] shrink-0">
+			<img alt="Video of using readability features" src="/readability.gif" class="w-full h-auto" />
+		</div>
+
+		<div class="flex-grow flex flex-col justify-start mt-[-100px] md:mt-0">
+			<div
+				class="flex flex-col gap-8 bg-white/10 backdrop-blur-lg py-10 px-4 md:p-20 rounded-3xl md:rounded-[100px] justify-center items-center"
+			>
+				<p class="text-3xl md:text-6xl -text-gradient font-bold text-center">
+					Personalize How You Read Newsletters
+				</p>
+
+				<p class="text-lg text-white text-center">
+					Customize how you read newsletters with LoomLetter. Adjust formats and settings for a
+					reading experience tailored to your preferences—all for personal use and ease.
+				</p>
+
+				<!-- <button
+					class="w-fit bg-white/10 hover:bg-white/30 px-6 py-3 rounded-3xl font-bold transition-all"
+					><p class="-text-gradient">Listen to a Newsletter</p></button
+				> -->
+			</div>
 		</div>
 	</div>
 </section>

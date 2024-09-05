@@ -141,7 +141,7 @@
 		<a href="/">
 			<div class="flex flex-row gap-5 items-center">
 				<img src="/logo.svg" alt="LoomLetter Icon" width="40" height="40" />
-				<p class="text-3xl font-medium hidden md:block">LoomLetter</p>
+				<img src="/brand-text.png" alt="LoomLetter Brand text" class="h-7" />
 			</div>
 		</a>
 		<div class="flex flex-row justify-end gap-4">

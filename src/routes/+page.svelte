@@ -183,7 +183,7 @@
 			<img alt="Video of using readability features" src="/readability.gif" class="w-full h-auto" />
 		</div>
 
-		<div class="flex-grow flex flex-col justify-start mt-[-100px] md:mt-0">
+		<div class="flex-grow flex flex-col justify-start md:mt-0">
 			<div
 				class="flex flex-col gap-8 bg-white/10 backdrop-blur-lg py-10 px-4 md:p-20 rounded-3xl md:rounded-[100px] justify-center items-center"
 			>
@@ -281,7 +281,7 @@
 				We’re listening to our users to build something you’ll love.
 			</p>
 		</div>
-		<div class="flex flex-row gap-5 items-center justify-center">
+		<div class="flex flex-col md:flex-row gap-5 items-center justify-center">
 			<a
 				href="https://loomletter.canny.io/changelog"
 				target="_blank"

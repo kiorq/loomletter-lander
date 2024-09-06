@@ -59,7 +59,7 @@
 	<title>LoomLetter - Never miss a newsletter again</title>
 	<meta
 		name="description"
-		content="Never miss a newsletter again with LoomLetter. Personalize how you read, listen, and manage your newsletters with customizable fonts, colors, and backgrounds. Join 100+ early adopters and transform your inbox today!"
+		content="Never miss a newsletter again with LoomLetter. Personalize how you read, listen, and manage your newsletters with customizable fonts, colors, and backgrounds. Join 150+ early adopters and transform your inbox today!"
 	/>
 </svelte:head>
 
@@ -75,7 +75,7 @@
 			</h1>
 
 			<p class="text-lg md:text-2xl text-white text-center md:text-left">
-				Join 100+ Early Adopters
+				Join 150+ Early Adopters
 			</p>
 
 			<div

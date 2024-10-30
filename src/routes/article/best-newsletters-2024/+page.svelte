@@ -518,7 +518,7 @@
 		<div class="w-full flex flex-col justify-center items-center gap-5 mt-12">
 			<a
 				class="-cta-gradient w-fit bg-white/10 hover:bg-white/30 px-5 md:px-9 py-2.5 rounded-full font-bold transition-all"
-				href="https://testflight.apple.com/join/Jynt22qF"
+				href="https://apps.apple.com/us/app/newsletter-reader-loomletter/id6538716924"
 				target="_blank"
 			>
 				<p class="text-black text-xl text-center flex flex-row items-center gap-2">

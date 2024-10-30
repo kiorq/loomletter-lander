@@ -70,12 +70,11 @@
 		</div>
 		<div class="flex-grow flex flex-col gap-4 justify-start">
 			<h1 class="text-4xl text-center md:text-left md:text-6xl -text-gradient font-bold">
-				<!-- TODO: i like this one alot "What If You Never Missed a Newsletter Again?"" -->
 				Never Miss a Newsletter Again
 			</h1>
 
 			<p class="text-lg md:text-2xl text-white text-center md:text-left">
-				Join 150+ Early Adopters
+				Stay on top of every update with LoomLetter, now available on iOS.
 			</p>
 
 			<div
@@ -84,17 +83,15 @@
 				<a
 					on:click={onHeroCtaClick}
 					class="-cta-gradient w-fit bg-white/10 hover:bg-white/30 px-5 md:px-9 py-4 rounded-full font-bold transition-all"
-					href="https://testflight.apple.com/join/Jynt22qF"
+					href="https://apps.apple.com/us/app/newsletter-reader-loomletter/id6538716924"
 					target="_blank"
 					><p class="text-black text-xl lg:text-2xl text-center flex flex-row items-center gap-2">
-						<Apple /> <span>Try Now</span>
+						<Apple /> <span>Download Now</span>
 					</p></a
 				>
 			</div>
 
-			<p class="md:text-lg text-white/70 text-center md:text-left">
-				Early Adopter Program Available for iOS only
-			</p>
+			<p class="md:text-lg text-white/70 text-center md:text-left">Available now the App Store</p>
 		</div>
 	</div>
 </section>
@@ -271,7 +268,7 @@
 </section>
 
 <WaitlistSection sectionName="WaitList2" />
-
+<!-- 
 <section class="w-full pb-20" use:whenInView={onTrackViewSection('Faq')}>
 	<div class="flex flex-col gap-12">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
@@ -304,4 +301,4 @@
 			>
 		</div>
 	</div>
-</section>
+</section> -->

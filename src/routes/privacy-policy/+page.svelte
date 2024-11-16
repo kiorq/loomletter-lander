@@ -31,11 +31,20 @@
 
 	<section class="mb-8">
 		<h2 class="text-2xl font-semibold mb-4">Types of Data Collected</h2>
+
 		<h3 class="text-lg font-medium mb-2">Email Address</h3>
 		<p class="text-white/80">
 			Each user is assigned a custom LoomLetter email address (e.g., example@read.loomletter.app).
 			We store every newsletter sent to this email address for you to access and read through our
 			app.
+		</p>
+
+		<h3 class="text-lg font-medium mt-4 mb-2">Access and Refresh Tokens</h3>
+		<p class="text-white/80">
+			To enable inbox synchronization, we securely store access and refresh tokens in our database.
+			These tokens allow our Service to periodically check your inbox and retrieve newsletters from
+			the senders you have selected. The tokens are never exposed to the client and are managed
+			entirely by the backend.
 		</p>
 
 		<h3 class="text-lg font-medium mt-4 mb-2">Push Token</h3>
@@ -60,6 +69,15 @@
 	</section>
 
 	<section class="mb-8">
+		<h2 class="text-2xl font-semibold mb-4">Periodic Newsletter Checks</h2>
+		<p class="text-white/80">
+			To ensure you stay updated, our Service checks your inbox every 15 minutes to retrieve new
+			newsletters. During the initial setup, we perform a one-time search that goes back as far as
+			six months to discover past newsletters from the senders you have selected.
+		</p>
+	</section>
+
+	<section class="mb-8">
 		<h2 class="text-2xl font-semibold mb-4">Legal Use of Audio and Readability Formats</h2>
 		<p class="text-white/80">
 			We provide text-to-speech (TTS) and enhanced readability formats to help users interact with
@@ -67,15 +85,6 @@
 			redistribution, sharing, or external use of the generated audio or modified newsletter formats
 			is not allowed. This ensures that we comply with copyright and content ownership laws, similar
 			to services like Speechify.
-		</p>
-	</section>
-
-	<section class="mb-8">
-		<h2 class="text-2xl font-semibold mb-4">Data Security</h2>
-		<p class="text-white/80">
-			The security of your data is important to us. While no method of transmission over the
-			Internet or method of electronic storage is 100% secure, we strive to use commercially
-			acceptable means to protect your personal data.
 		</p>
 	</section>
 

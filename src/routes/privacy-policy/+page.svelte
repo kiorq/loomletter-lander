@@ -35,8 +35,8 @@
 		<h3 class="text-lg font-medium mb-2">Email Address</h3>
 		<p class="text-white/80">
 			Each user is assigned a custom LoomLetter email address (e.g., example@read.loomletter.app).
-			We store every newsletter sent to this email address for you to access and read through our
-			app.
+			We securely store every newsletter sent to this email address, ensuring they are encrypted and
+			accessible only through our app.
 		</p>
 
 		<h3 class="text-lg font-medium mt-4 mb-2">Access and Refresh Tokens</h3>
@@ -57,10 +57,14 @@
 	<section class="mb-8">
 		<h2 class="text-2xl font-semibold mb-4">Data Processing</h2>
 		<p class="text-white/80">
-			Newsletters sent to your custom LoomLetter email address are securely stored, and you can
-			access them through the app. We generate an audio version of each newsletter for personal use
-			only, which enhances your reading experience. This audio is stored temporarily within the app
-			and cannot be downloaded for external use.
+			Newsletters sent to your custom LoomLetter email address are securely stored and encrypted to
+			protect your privacy. This ensures that your newsletters remain confidential and are only
+			accessible through the app.
+		</p>
+		<p class="text-white/80">
+			We generate an audio version of each newsletter for personal use only, which enhances your
+			reading experience. This audio is stored temporarily within the app and cannot be downloaded
+			for external use.
 		</p>
 		<p class="text-white/80">
 			All newsletters can be accessed in various formats, including enhanced readability modes,

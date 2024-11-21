@@ -39,12 +39,12 @@
 			accessible only through our app.
 		</p>
 
-		<h3 class="text-lg font-medium mt-4 mb-2">Access and Refresh Tokens</h3>
+		<h3 class="text-lg font-medium mt-4 mb-2">Access Credentials</h3>
 		<p class="text-white/80">
-			To enable inbox synchronization, we securely store access and refresh tokens in our database.
-			These tokens allow our Service to periodically check your inbox and retrieve newsletters from
-			the senders you have selected. The tokens are never exposed to the client and are managed
-			entirely by the backend.
+			To enable inbox synchronization, we securely store access credentials, including access tokens
+			and email passwords, in our system. These credentials are encrypted to ensure their security
+			and are used exclusively to sync your inbox with your LoomLetter account. We manage
+			credentials entirely on the backend, and they are never exposed to the client.
 		</p>
 
 		<h3 class="text-lg font-medium mt-4 mb-2">Push Token</h3>

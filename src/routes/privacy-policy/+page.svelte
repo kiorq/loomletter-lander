@@ -73,6 +73,35 @@
 	</section>
 
 	<section class="mb-8">
+		<h2 class="text-2xl font-semibold mb-4">User Control and Optional Inbox Synchronization</h2>
+		<p class="text-white/80">
+			LoomLetter offers optional inbox synchronization for users who choose to enable it. This
+			feature allows the app to retrieve newsletters directly from your email provider and make them
+			accessible within LoomLetter. If you choose not to enable this feature, LoomLetter will not
+			access or interact with your email inbox in any way.
+		</p>
+		<p class="text-white/80">
+			For users who enable inbox synchronization, you have full control over your account and the
+			email providers connected to LoomLetter. At any time, you may revoke access to your inbox
+			provider, such as Google or Apple Mail, through the app settings.
+		</p>
+		<ul class="list-disc list-inside text-white/80">
+			<li>
+				For Google accounts, revoking access will automatically invalidate tokens and remove access
+				permissions granted to LoomLetter.
+			</li>
+			<li>
+				For IMAP-based providers like Apple Mail, removing your credentials in LoomLetter settings
+				will disconnect your inbox from our services and remove stored credentials from our system.
+			</li>
+		</ul>
+		<p class="text-white/80">
+			This ensures that LoomLetter no longer has access to your inbox, and any future syncing
+			operations will cease.
+		</p>
+	</section>
+
+	<section class="mb-8">
 		<h2 class="text-2xl font-semibold mb-4">Periodic Newsletter Checks</h2>
 		<p class="text-white/80">
 			To ensure you stay updated, our Service checks your inbox every 15 minutes to retrieve new

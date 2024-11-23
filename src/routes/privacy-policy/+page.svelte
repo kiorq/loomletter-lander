@@ -82,6 +82,32 @@
 	</section>
 
 	<section class="mb-8">
+		<h2 class="text-2xl font-semibold mb-4">Retention and Deletion of Data</h2>
+		<p class="text-white/80">
+			We are committed to ensuring your data is only retained as long as necessary. If you choose to
+			delete your LoomLetter account, all associated data is permanently deleted from our systems,
+			including:
+		</p>
+		<ul class="list-disc list-inside text-white/80">
+			<li>
+				Access credentials (such as access tokens, refresh tokens, or email passwords) used for
+				inbox synchronization with supported email providers (e.g., Google, Apple Mail via IMAP).
+				These credentials are securely removed and, where applicable, tokens are revoked.
+			</li>
+			<li>
+				All newsletters stored in LoomLetter, including those imported from your connected email
+				providers.
+			</li>
+			<li>Any settings or preferences associated with your account.</li>
+		</ul>
+		<p class="text-white/80">
+			We support synchronization with multiple email providers, including Google services and other
+			IMAP-based email systems such as Apple Mail. Each provider's credentials are handled securely
+			and in compliance with their respective privacy and security guidelines.
+		</p>
+	</section>
+
+	<section class="mb-8">
 		<h2 class="text-2xl font-semibold mb-4">Legal Use of Audio and Readability Formats</h2>
 		<p class="text-white/80">
 			We provide text-to-speech (TTS) and enhanced readability formats to help users interact with

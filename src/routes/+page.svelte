@@ -115,6 +115,48 @@
 	</div>
 </section>
 
+<section class="w-full pb-20 md:pb-[200px]" use:whenInView={onTrackViewSection('Lists')}>
+	<div class="flex flex-col-reverse md:flex-row gap-0 items-center">
+		<div class="w-3/5 md:w-[390px] shrink-0">
+			<img alt="Screenshot of the Lists feature" src="/lists-feature.png" class="w-full h-auto" />
+		</div>
+
+		<div class="flex-grow flex flex-col justify-start md:mt-0">
+			<div
+				class="flex flex-col gap-3 bg-white/10 backdrop-blur-lg py-10 px-4 md:p-20 rounded-3xl md:rounded-[100px] justify-center items-center"
+			>
+				<p class="text-3xl md:text-6xl -text-gradient font-bold text-center">
+					Stay Organized with Custom Lists
+				</p>
+
+				<div class="text-lg text-white text-center">
+					<ul class="mt-4 space-y-4 text-left">
+						<li class="flex items-start gap-3">
+							<span class="w-3 h-2 mt-2.5 bg-[#32F3AE] rounded-full flex-shrink-0"></span>
+							<p>
+								Group newsletters into custom lists like <strong>"Must-Reads"</strong> or
+								<strong>"Later Reads."</strong>
+							</p>
+						</li>
+						<li class="flex items-start gap-3">
+							<span class="w-3 h-2 mt-2.5 bg-[#32F3AE] rounded-full flex-shrink-0"></span>
+							<p>Reorder lists to fit your priorities.</p>
+						</li>
+						<li class="flex items-start gap-3">
+							<span class="w-3 h-2 mt-2.5 bg-[#32F3AE] rounded-full flex-shrink-0"></span>
+							<p>Set any list as your <strong>"home"</strong> for quick access.</p>
+						</li>
+						<li class="flex items-start gap-3">
+							<span class="w-3 h-2 mt-2.5 bg-[#32F3AE] rounded-full flex-shrink-0"></span>
+							<p>Filter newsletters by date range to focus on recent updates.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <section class="w-full pb-20 md:pb-[200px]" use:whenInView={onTrackViewSection('AIRead')}>
 	<div class="flex flex-col-reverse md:flex-row gap-0 items-center">
 		<div class="flex-grow flex flex-col justify-start mt-[-100px] md:mt-0">

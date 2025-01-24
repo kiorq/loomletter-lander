@@ -66,7 +66,7 @@
 <section class="w-full pb-20 md:py-[120px]" use:whenInView={onTrackViewSection('Hero')}>
 	<div class="flex flex-col-reverse md:flex-row gap-8 items-center">
 		<div class="w-full md:w-[502px] shrink-0">
-			<img alt="3 iPhones of LoomLetter screenshots" src="/iphones.webp" class="w-full h-auto" />
+			<img alt="3 iPhones of LoomLetter screenshots" src="/iphones.png" class="w-full h-auto" />
 		</div>
 		<div class="flex-grow flex flex-col gap-4 justify-start">
 			<h1 class="text-4xl text-center md:text-left md:text-6xl -text-gradient font-bold">
@@ -116,8 +116,8 @@
 </section>
 
 <section class="w-full pb-20 md:pb-[200px]" use:whenInView={onTrackViewSection('Lists')}>
-	<div class="flex flex-col-reverse md:flex-row gap-0 items-center">
-		<div class="w-3/5 md:w-[390px] shrink-0">
+	<div class="flex flex-col md:flex-row gap-0 items-center mt-[-70px] md:mt-0">
+		<div class="w-3/5 md:w-[390px] shrink-0 translate-y-[70px] md:translate-y-0">
 			<img alt="Screenshot of the Lists feature" src="/lists-feature.png" class="w-full h-auto" />
 		</div>
 

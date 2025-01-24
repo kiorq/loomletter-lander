@@ -25,11 +25,13 @@
 >
 	<div class="flex flex-col gap-10 md:gap-10 items-center">
 		<div class="flex-grow flex flex-col gap-8 justify-start">
-			<p class="text-5xl md:text-7xl -text-gradient font-bold text-center">Join 400+ Readers</p>
+			<p class="text-5xl md:text-6xl -text-gradient font-bold text-center">
+				Trusted by Readers Worldwide to Organize Newsletters
+			</p>
 
 			<p class="text-lg text-white text-center w-full md:max-w-[700px] mx-auto">
-				Subscribe to your favorite newsletters and access them in one place. Stay organized, reduce
-				inbox clutter, and never miss an update with LoomLetter.
+				All your favorite newsletters in one place. Stay organized, reduce inbox clutter, and never
+				miss an update with LoomLetter.
 			</p>
 		</div>
 

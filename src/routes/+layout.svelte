@@ -158,7 +158,7 @@
 	<footer
 		class="w-full max-w-[800px] px-4 py-10 mx-auto flex flex-wrap flex-row gap-2 md:gap-8 items-center justify-center"
 	>
-		<p class="text-sm opacity-60 w-full md:w-auto text-center">&copy; Digital Douglas 2024</p>
+		<p class="text-sm opacity-60 w-full md:w-auto text-center">&copy; Digital Douglas 2024-2025</p>
 		<a class="text-sm opacity-60 hover:underline" href="/privacy-policy">Privacy Policy</a>
 		<a class="text-sm opacity-60 hover:underline" href="/press">Press</a>
 	</footer>

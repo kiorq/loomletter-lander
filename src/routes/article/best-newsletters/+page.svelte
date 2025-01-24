@@ -366,7 +366,7 @@
 		</p>
 
 		<p class="text-sm text-gray-600">
-			This list was last updated on 16 Aug 2024 to ensure you have the most current recommendations.
+			This list was last updated on 16 Jan 2025 to ensure you have the most current recommendations.
 		</p>
 
 		<ul class="mt-8">

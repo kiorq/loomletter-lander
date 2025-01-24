@@ -301,8 +301,8 @@
 				descr="Professionals rely on newsletters to stay competitive across various industries."
 			/>
 			<ArticleItem
-				href="/article/best-newsletters-2024"
-				title="Best Newsletter 2024"
+				href="/article/best-newsletters"
+				title="Best Newsletters for 2025"
 				descr="These newsletters will make sure you don't fall behind in your industry"
 			/>
 		</div>

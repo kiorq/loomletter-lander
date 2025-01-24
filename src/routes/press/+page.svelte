@@ -183,7 +183,7 @@
 			Reach out to me at <a
 				class="font-medium hover:underline text-[#32F3AE]"
 				href="mailto:loomletter@digidouglas.com"
-				on:click={onContactTrack}>loomletter@digidouglas.com</a
+				on:click={onContactTrack}>kirk@loomletter.app</a
 			>
 		</p>
 	</section>

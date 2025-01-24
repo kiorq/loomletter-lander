@@ -19,7 +19,7 @@
 		{
 			question: 'What makes LoomLetter different from other newsletter readers?',
 			answer:
-				'LoomLetter focuses on convenience for busy professionals with features like AI narration and easy access widgets, providing a seamless and efficient way to stay updated.'
+				'LoomLetter focuses on convenience for busy professionals with features like AI narration, easy access widgets, and powerful organization tools to avoid the inbox clutter and stay focused on what matters most, providing a seamless and efficient way to stay updated.'
 		},
 		{
 			question: 'What are the key features of LoomLetter?',

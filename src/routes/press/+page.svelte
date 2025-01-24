@@ -69,7 +69,7 @@
 		<p class="text-white/80 mb-5">
 			<a
 				class="font-medium hover:underline text-[#32F3AE]"
-				href="mailto:loomletter@digidouglas.com"
+				href="mailto:kirk@loomletter.app"
 				on:click={onContactTrack}
 			>
 				Send an email

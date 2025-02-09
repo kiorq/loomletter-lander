@@ -54,19 +54,17 @@
 	<!-- 📌 How to Use Instructions -->
 	<section class="text-center">
 		<h2 class="text-2xl font-semibold">How to Use</h2>
-		<ul class="mt-5 space-y-2 text-white/80 max-w-[600px] mx-auto">
-			<li class="flex items-center gap-4">
-				<span class="w-3 h-3 bg-[#32F3AE] rounded-full"></span>
-				Copy your LoomLetter email address above.
-			</li>
-			<li class="flex items-center gap-4">
-				<span class="w-3 h-3 bg-[#32F3AE] rounded-full"></span>
-				Use it to sign up for newsletters like any other email.
-			</li>
-			<li class="flex items-center gap-4">
-				<span class="w-3 h-3 bg-[#32F3AE] rounded-full"></span>
-				Newsletters will appear in your LoomLetter inbox automatically.
-			</li>
+		<ul class="mt-5 space-y-4 text-white/80 max-w-[600px] mx-auto">
+			{#each ['Copy your LoomLetter email address above.', 'Use it to sign up for newsletters like any other email.', 'Newsletters will appear in your LoomLetter inbox automatically.'] as step, i}
+				<li class="flex items-center gap-4">
+					<span
+						class="w-8 h-8 bg-[#32F3AE]/30 text-white font-bold text-lg flex items-center justify-center rounded-full"
+					>
+						{i + 1}
+					</span>
+					<span class="text-lg">{step}</span>
+				</li>
+			{/each}
 		</ul>
 	</section>
 

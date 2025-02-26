@@ -145,6 +145,10 @@
 			</div>
 		</a>
 		<div class="flex flex-row justify-end gap-4">
+			<a
+				href="https://blog.loomletter.app"
+				class="py-2.5 px-6 hover:bg-white/10 rounded-3xl transition-all">Blog</a
+			>
 			<a href="/press" class="py-2.5 px-6 hover:bg-white/10 rounded-3xl transition-all">Press</a>
 			<a href="/privacy-policy" class="py-2.5 px-6 hover:bg-white/10 rounded-3xl transition-all">
 				Privacy Policy
@@ -161,5 +165,6 @@
 		<p class="text-sm opacity-60 w-full md:w-auto text-center">&copy; Digital Douglas 2024-2025</p>
 		<a class="text-sm opacity-60 hover:underline" href="/privacy-policy">Privacy Policy</a>
 		<a class="text-sm opacity-60 hover:underline" href="/press">Press</a>
+		<a class="text-sm opacity-60 hover:underline" href="https://blog.loomletter.app">Blog</a>
 	</footer>
 </div>

@@ -296,9 +296,9 @@
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-5">
 			<ArticleItem
-				href="/article/how-modern-professionals-stay-ahead-of-the-competition"
-				title="How Modern Professionals Stay Ahead of the Competition: The Power of Newsletters"
-				descr="Professionals rely on newsletters to stay competitive across various industries."
+				href="https://blog.loomletter.app/best-newsletter-for-busy-professionals"
+				title="The Best Newsletter for Busy Professionals: A Curated Guide for the Modern US Executive"
+				descr="Elevate Your Daily Routine with Curated Business Insights and Stylish Strategies"
 			/>
 			<ArticleItem
 				href="/article/best-newsletters"

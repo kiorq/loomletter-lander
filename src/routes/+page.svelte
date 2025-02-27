@@ -78,17 +78,29 @@
 			</p>
 
 			<div
-				class="w-full flex flex-col md:justify-start md:items-start justify-center items-center gap-5 mt-3"
+				class="w-full flex flex-col md:flex-row md:justify-start md:items-start justify-center items-center gap-5 mt-3"
 			>
 				<a
 					on:click={onHeroCtaClick}
 					class="-cta-gradient w-fit bg-white/10 hover:bg-white/30 px-5 md:px-9 py-4 rounded-full font-bold transition-all"
 					href="https://apps.apple.com/us/app/newsletter-reader-loomletter/id6538716924"
 					target="_blank"
-					><p class="text-black text-xl lg:text-2xl text-center flex flex-row items-center gap-2">
-						<Apple /> <span>Download Now</span>
-					</p></a
 				>
+					<p class="text-black text-xl lg:text-2xl text-center flex flex-row items-center gap-2">
+						<Apple /> <span>Download Now</span>
+					</p>
+				</a>
+
+				<a
+					on:click={onHeroCtaClick}
+					class="w-fit bg-white hover:bg-white/80 px-9 md:px-9 py-4 rounded-full font-semibold transition-all"
+					href="https://web.loomletter.app"
+					target="_blank"
+				>
+					<p class="text-black text-xl lg:text-2xl text-center flex flex-row items-center gap-2">
+						<span>Web App</span>
+					</p>
+				</a>
 			</div>
 
 			<p class="md:text-lg text-white/70 text-center md:text-left">Available now the App Store</p>
